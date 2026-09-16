@@ -138,6 +138,33 @@ A Embratur registra crescimento de 51,7% na chegada de turistas estrangeiros ao 
 > 🔗 [Rio de Janeiro bate recorde de turistas internacionais em 2025 — Agência Brasil, nov. 2025](https://agenciabrasil.ebc.com.br/economia/noticia/2025-11/rio-de-janeiro-bate-recorde-de-turistas-internacionais-em-2025)
 
 
+#### O contexto social: o que o evento faz com a cidade e com quem mora nela
+
+Contextualizar o período apenas por fluxo de visitantes e receita seria descrever metade do fenômeno. O turismo de eventos produz efeitos sobre a sociedade carioca que precisam estar declarados, e há dado oficial para três deles.
+
+O primeiro é o emprego. O estudo da Fundação Getulio Vargas sobre a edição de 2024 do Rock in Rio aponta a criação de 32,6 mil postos de trabalho na cidade; a edição de 2022 havia gerado 28 mil empregos diretos. São vagas majoritariamente temporárias, concentradas em serviços, alimentação, transporte, limpeza e segurança — o que significa que o benefício chega justamente à faixa de trabalhadores de menor renda e maior rotatividade. É por isso que a contribuição social declarada neste projeto fala de emprego e comércio, e não apenas de arrecadação.
+
+> 🔗 [Estudo da FGV sobre o Rock in Rio 2024: 32,6 mil postos de trabalho — Hotelier News](https://hoteliernews.com.br/rock-in-rio-2024-deve-gerar-impacto-economico-bilionario-diz-fgv/)
+
+> 🔗 [Balanço do Rock in Rio 2024 — Agência Brasil, 23 set. 2024](https://agenciabrasil.ebc.com.br/cultura/noticia/2024-09/rock-rio-gera-r-26-bilhoes-para-economia-fluminense)
+
+O segundo é o pequeno comércio. No balanço do Carnaval de 2025, divulgado pela Agência Brasil com dados do Governo do Estado, da ABIH-RJ, da Confederação Nacional do Comércio e do Caged, o setor de bares e restaurantes registrou crescimento de 40% em relação a 2015 e de 20% sobre 2024. Durante o Rock in Rio de 2024, o comércio faturou 24% mais. O evento, portanto, não beneficia apenas a cadeia formal do turismo: ele irriga o comércio de rua, o ambulante, o mototáxi, o restaurante de bairro.
+
+> 🔗 [Carnaval de 2025 teve recordes para bares, restaurantes e hotéis do RJ — Agência Brasil, 10 mar. 2025](https://agenciabrasil.ebc.com.br/economia/noticia/2025-03/carnaval-de-2025-teve-recordes-para-bares-restaurantes-e-hoteis-do-rj)
+
+O terceiro é a imagem da cidade e a autoestima de quem vive nela. O contraste entre os dois extremos do recorte é eloquente: em 2017 e 2018, o Rio aparecia na imprensa nacional como destino em retração por causa da violência urbana, com perda estimada de R$ 657 milhões em receitas turísticas apenas entre janeiro e agosto de 2017; em 2024, o governo do estado avaliou que o show de Madonna em Copacabana havia contribuído para recuperar a reputação da cidade. Trata-se de um ganho difuso, que nenhum indicador de ocupação mede, mas que é parte do que a sociedade recebe — e do que uma revista jornalística consegue narrar melhor do que uma tabela.
+
+> 🔗 [Rio perdeu R$ 657 milhões em turismo por causa da violência, diz CNC — Agência Brasil, out. 2017](https://agenciabrasil.ebc.com.br/economia/noticia/2017-10/rio-perdeu-r-657-milhoes-em-turismo-por-causa-da-violencia-diz-cnc)
+
+> 🔗 [Show de Madonna movimentou R$ 300 milhões e recuperou reputação do Rio, diz governo do estado — Exame, 2024](https://exame.com/brasil/show-de-madonna-movimentou-r-300-milhoes-e-recuperou-reputacao-do-rio-diz-governo-do-estado/)
+
+É preciso, no entanto, registrar a contrapartida, e a literatura acadêmica oferece o instrumento para isso. Pesquisa publicada na Revista Brasileira de Pesquisa em Turismo investigou a percepção dos moradores do Rio sobre os impactos dos Jogos Olímpicos de 2016 antes, durante e depois do megaevento — abordagem que mostra que morador e visitante não avaliam o mesmo evento da mesma forma. Megaevento implica interdição de vias, deslocamento de atividades, pressão sobre transporte e, em alguns casos, remoções e gentrificação. Este trabalho não tem como objeto essa dimensão, mas precisa citá-la, sob pena de confundir pesquisa com peça de divulgação institucional — risco real para quem, como a autora, trabalha na promoção do destino.
+
+> 🔗 [Residents' Perceptions of the Impacts of the Rio 2016 Olympic Games: Before, During and After the Mega-Event — Revista Brasileira de Pesquisa em Turismo](https://www.scielo.br/j/rbtur/a/fSJPfrhHs63z4wF7vLPPbfz/?lang=en)
+
+> **Nota:** Sugestão de pauta para a revista, que resolve essa tensão de forma jornalística: uma página ou um box ouvindo trabalhadores da cadeia do evento — garçom, camareira, ambulante, motorista de aplicativo. É a voz que os balanços oficiais não trazem, é apuração de campo, e transforma o dado econômico em matéria humana. Cabe no espaço de uma página e eleva o produto inteiro.
+
+
 #### O quadro-síntese: contexto turístico, evento e instrumento
 
 A tabela abaixo reúne, ano a ano, o contexto turístico do período, os eventos realizados na cidade e a taxa média de ocupação hoteleira — nesta ordem, que é a ordem da pesquisa: primeiro o turismo, depois o evento, por último o instrumento que permite datá-los.
@@ -367,11 +394,17 @@ Por fim, a percepção dos moradores sobre a Rio 2016, estudada em artigo da Rev
 > 🔗 [Residents' Perceptions of the Impacts of the Rio 2016 Olympic Games — RBTur](https://www.scielo.br/j/rbtur/a/fSJPfrhHs63z4wF7vLPPbfz/?lang=en)
 
 
-### 4.4. A revista como veículo e o projeto gráfico-editorial
+### 4.4. O que é uma revista jornalística
 
-Sendo o produto uma revista, a fundamentação cobre também a teoria do veículo. A referência canônica no Brasil é Scalzo (2003), para quem a revista é, simultaneamente, veículo de comunicação, produto, negócio, marca, objeto, conjunto de serviços e mistura de jornalismo com entretenimento. A autora observa que a revista se situa entre a instantaneidade do jornal e a longevidade do livro, e que é segmentada por assunto e por público — definição que orienta as escolhas deste projeto: leitores formados por profissionais de turismo, gestores públicos e jornalistas de economia e cultura.
+Sendo o produto uma revista, a fundamentação precisa cobrir a teoria do veículo com o mesmo rigor aplicado ao turismo. A referência canônica no Brasil é Scalzo (2003), para quem a revista é, simultaneamente, veículo de comunicação, produto, negócio, marca, objeto, conjunto de serviços e mistura de jornalismo com entretenimento. A autora situa a revista entre a instantaneidade do jornal e a longevidade do livro, e registra que ela é segmentada por assunto e por público, buscando sintonia permanente com o interesse do leitor.
 
-> 🔗 [TCC do Repositório UFSC que utiliza Scalzo como referência — SCALZO, Marília. Jornalismo de Revista. São Paulo: Contexto, 2003](https://repositorio.ufsc.br/bitstream/handle/123456789/202068/TCC.pdf)
+> 🔗 [TCC do Repositório da UFSC que utiliza e cita Scalzo — referência: SCALZO, Marília. Jornalismo de Revista. São Paulo: Contexto, 2003](https://repositorio.ufsc.br/bitstream/handle/123456789/202068/TCC.pdf)
+
+Três características da revista justificam a escolha do veículo para este trabalho. A primeira é a periodicidade mais larga, que permite apuração em profundidade — condição indispensável quando o objeto é uma série de oito anos. A segunda é a segmentação: a revista fala a um público definido, e o público deste trabalho é preciso (profissionais de turismo e hotelaria, gestores públicos e jornalistas de economia e cultura). A terceira é a relação entre texto e imagem, que na revista não é ilustrativa, mas estruturante — o que acomoda a curadoria de imagens prevista na metodologia e a infografia exigida pelos dados.
+
+Sobre o texto de revista, a referência é Vilas Boas (1996), em O estilo magazine: o texto em revista, que descreve o gênero como território privilegiado da reportagem, com ênfase no detalhe revelador, na descrição do cotidiano e na presença autoral — em contraste com a objetividade seca do texto diário. Sodré e Ferrari, em Técnica de reportagem, situam a reportagem como lugar nobre do jornalismo, e é esse o registro adotado nas seis páginas do produto: reportagem, e não release institucional.
+
+> 🔗 [Jornalismo Literário: revisão conceitual, história e novas perspectivas — Intercom/SciELO: artigo que discute Vilas Boas e o estilo magazine](https://www.scielo.br/j/interc/a/YywYmt85GZrc4NRsjHytXYm/?lang=pt)
 
 Para o projeto gráfico-editorial, a bibliografia consolidada é Ali (2009), sobre a arte de editar revistas; Samara (2011), manual prático de design de publicações; Lupton (2013), sobre tipografia e entrelinha; e Munari (2015), sobre metodologia de projeto. Samara formula o princípio que rege a diagramação desta revista:
 
@@ -379,20 +412,79 @@ Para o projeto gráfico-editorial, a bibliografia consolidada é Ali (2009), sob
 >
 > — SAMARA, 2011
 
-> 🔗 [SCHUCH, L. D. DCMAGZ: projeto gráfico editorial de uma revista de design gráfico. TCC — UFSC (fonte das referências de design editorial aqui citadas)](https://repositorio.ufsc.br/handle/123456789/164566)
-
-Consultaram-se ainda, como precedentes metodológicos de TCC de produto na mesma linha — revista concebida como projeto gráfico-editorial completo —, trabalhos dos repositórios da UFSC e do LUME/UFRGS, que estruturam o processo em briefing, análise de similares, definição de público, sistema de grid, escolha tipográfica, paleta e fechamento de arquivo.
-
-> 🔗 [Priti: projeto gráfico-editorial e produção de revista digital — TCC, Repositório UFSC](https://repositorio.ufsc.br/handle/123456789/237226)
-
-> 🔗 [Projeto gráfico-editorial de uma revista independente sobre arte e ilustração — TCC, Repositório UFSC](https://repositorio.ufsc.br/handle/123456789/218844)
-
-> 🔗 [A identidade visual no projeto gráfico de revistas — LUME/UFRGS](https://lume.ufrgs.br/bitstream/handle/10183/115890/000965592.pdf)
+> 🔗 [SCHUCH, L. D. DCMAGZ: projeto gráfico editorial de uma revista de design gráfico — TCC/UFSC, fonte verificada das referências de design editorial (Ali, Samara, Lupton, Munari)](https://repositorio.ufsc.br/handle/123456789/164566)
 
 
-### 4.5. Síntese: onde este trabalho se encaixa
+### 4.5. A entrevista jornalística: técnica e método
+
+A metodologia declarada no projeto prevê entrevistas com especialistas, e isso exige fundamentação própria — a entrevista não é conversa, é técnica. Mariano (2018), em artigo na Revista FAMECOS, observa que, apesar de central na prática profissional, a entrevista é pouco teorizada:
+
+> A entrevista vem sendo estudada de forma esporádica e fragmentada. São poucos os livros e artigos que tratam do tema.
+>
+> — MARIANO, 2018
+
+> 🔗 [MARIANO, Agnes Francine de Carvalho. A entrevista como tema de pesquisa no campo da comunicação. Revista FAMECOS, v. 25, n. 2, 2018. DOI 10.15448/1980-3729.2018.2.28307](https://www.redalyc.org/journal/4955/495557631006/html/)
+
+As duas referências clássicas são complementares e, juntas, orientam os dois roteiros deste trabalho. Medina concebe a entrevista como diálogo e interação, capaz de produzir sentido novo:
+
+> Haverá até a possibilidade de acontecer um ato culminante que se pode nomear como interação social criadora.
+>
+> — MEDINA, Entrevista: o diálogo possível, apud MARIANO, 2018
+
+Lage, por sua vez, insiste no controle da condução pelo repórter:
+
+> O jornalista tem de conduzir a entrevista para onde quer, e não deixar-se conduzir pelo entrevistado.
+>
+> — LAGE, A reportagem, 2001, apud MARIANO, 2018
+
+Lage também classifica as entrevistas por objetivo e por circunstância de realização, distinção que foi aplicada na construção dos roteiros: a entrevista com o professor da FTH/UFF é de interpretação — busca enquadramento conceitual e admite divergência; a entrevista com o presidente do Sindicato é ao mesmo tempo ritual e temática — busca dado, série histórica e a descrição do próprio instrumento de coleta, além de suprir a lacuna documental de 2019. Essa diferença de objetivo explica por que os dois roteiros têm forma distinta, e é isso que deve ser dito na defesa.
+
+> 🔗 [SOARES, L. S.; NEGRINI, M. As técnicas de entrevista utilizadas pelos jornalistas do Jornal Nacional com os presidenciáveis 2018. Revista Alterjor, v. 22, n. 2, 2020 — aplicação das tipologias de Lage](https://revistas.usp.br/alterjor/article/view/171023)
+
+> **Nota:** Cuidado ético e metodológico declarado: a autora trabalha na comunicação da entidade que produz o dado e entrevistará o presidente dessa mesma entidade. Isso precisa estar explícito no texto do TCC, com a ressalva de que o dado primário é público, verificável no Observatório da Hotelaria, e que a entrevista com o professor da UFF cumpre a função de contraditório teórico. Declarar o lugar de fala fortalece o trabalho; omiti-lo o fragiliza.
+
+
+### 4.6. A apuração: como se verifica o que se afirma
+
+A apuração é o procedimento que separa jornalismo de opinião, e neste trabalho ela tem peso metodológico porque quase todos os números disponíveis sobre eventos são produzidos por quem tem interesse no resultado — prefeituras, governos, organizadores e entidades do setor. Lage, em A reportagem: teoria e técnica de entrevista e pesquisa jornalística, estabelece a pesquisa jornalística como etapa formal do processo, anterior e posterior à entrevista, e é esse o desenho adotado aqui.
+
+> 🔗 [Artigo em Revista Alterjor (USP) que discute as técnicas de Lage — referência: LAGE, Nilson. A reportagem: teoria e técnica de entrevista e pesquisa jornalística. Rio de Janeiro: Record, 2001](https://revistas.usp.br/alterjor/es/article/download/171023/162402/425166)
+
+Quatro regras de apuração foram fixadas para esta pesquisa, e todas estão aplicadas no Quadro de conferência que encerra esta ficha:
+
+- Hierarquia de fontes. Para número de visitantes e receita: Embratur, Ministério do Turismo, Polícia Federal e Prefeitura do Rio. Para ocupação: a pesquisa do HotéisRIO/ABIH-RJ. Para conceito: artigo científico revisado por pares. Fonte comercial e portal de bilheteria servem apenas para localizar a existência e a data de um evento.
+- Separação entre projeção e apuração. Estudo divulgado antes do evento é previsão e recebe verbo no futuro; balanço posterior é apuração. O caso de Lady Gaga é exemplar: o release da Prefeitura, de 2 de maio de 2025, estimava 1,6 milhão de pessoas; os balanços posteriores consolidaram 2,1 milhões. Citar os dois, com as datas, é mais preciso do que escolher um.
+- Identificação de quem produziu o dado, e não apenas de quem o publicou. Quando a taxa de ocupação aparece em veículo de imprensa, a origem é a pesquisa do sindicato; a forma correta de citação preserva isso: HotéisRIO apud PANROTAS, 2024.
+- Registro das falhas de acesso. Duas páginas oficiais consultadas estavam indisponíveis — a do Ministério do Turismo sobre o G20 (acesso restrito) e a do Observatório Legislativo da Câmara sobre violência e turismo (fora do ar). Ambas ficaram assinaladas nas referências. Apuração que não encontra a fonte registra a tentativa; não preenche a lacuna com estimativa.
+Há ainda um cuidado específico ao objeto. Impacto econômico, negócios gerados e movimentação financeira são metodologias distintas e não podem ser somadas num total único — erro comum na cobertura de eventos. Por isso a tabela de impactos desta pesquisa apresenta os valores lado a lado, com a natureza de cada um declarada, e não um número agregado.
+
+
+### 4.7. Por que a revista se adequa como produto de pesquisa
+
+A pergunta é legítima e tem resposta na literatura sobre o próprio ensino de jornalismo. O relatório de pesquisa de Gislene da Silva, do Departamento de Jornalismo da UFSC, mapeou três décadas de trabalhos de conclusão do curso e registra o produto jornalístico como a segunda modalidade mais frequente:
+
+> O segundo tipo de trabalho mais encontrado foi produto jornalístico. Dentre os 72 finalizados, 18 eram documentários, o produto mais recorrente: em 2002 houve seis deles. Em segundo lugar, estão os websites, com 17 produções.
+>
+> — SILVA, UFSC, 2020
+
+O mesmo relatório propõe a definição de produto jornalístico que enquadra exatamente este TCC — e a revista aparece nomeada:
+
+> Produto Jornalístico, incluindo todas as atividades em que o projeto jornalístico seja executado por completo, desde o projeto até a finalização, como a criação de um jornal ou revista ou de um documentário.
+>
+> — SILVA, UFSC, 2020
+
+> 🔗 [SILVA, Gislene da. Relatório final: inserção dos TCCs do Curso de Jornalismo da UFSC no Repositório Institucional. UFSC, fev. 2020 — mapeamento de três décadas de TCCs e definição das modalidades](https://repositorio.ufsc.br/bitstream/handle/123456789/209015/RELATORIO.pdf)
+
+Três razões adicionais sustentam a escolha do formato para este objeto específico. Primeira, a natureza do material: uma série de oito anos com noventa e quatro medições mensais, cruzada com dezoito eventos, é densa demais para uma reportagem única e pobre demais para um livro — a revista, com sua estrutura de seções, comporta a divisão em eixos (o colapso, a cultura, os negócios, o recorde) sem perder a unidade. Segunda, a exigência de infografia: os dados só se tornam compreensíveis quando visualizados, e a revista é o veículo impresso que melhor integra gráfico, legenda e texto. Terceira, a destinação: o trabalho pretende servir de fonte confiável para coberturas jornalísticas sobre turismo, economia e cultura no Rio, conforme declarado nas contribuições do projeto, e uma revista circula entre esses profissionais de forma que uma monografia não circula.
+
+Vale registrar, por honestidade acadêmica, que o produto não substitui a pesquisa: ele a materializa. A revista das seis páginas é o resultado de um processo que inclui reconstituição de série histórica, levantamento de fontes oficiais, cruzamento de dados, revisão bibliográfica e entrevistas — todas as etapas descritas na Metodologia desta ficha. É a distinção entre um trabalho de produto e um trabalho apenas prático.
+
+
+### 4.8. Síntese: onde este trabalho se encaixa
 
 A literatura existente descreve o ciclo dos megaeventos de 2014 e 2016, o excesso de oferta hoteleira que o sucedeu e o impacto da pandemia sobre turismo e eventos. Não foi localizado, entre as referências consultadas, estudo que relacione o crescimento do fluxo turístico do Rio de Janeiro entre 2018 e 2025 ao calendário de grandes eventos, usando como instrumento de datação a série mensal produzida pela entidade do setor. É essa a contribuição original pretendida: demonstrar que a cidade passou a operar um calendário de eventos como política de fomento ao turismo, e que esse arranjo — e não um megaevento isolado — acompanhou o melhor desempenho turístico já registrado, com 12,5 milhões de visitantes e R$ 27,2 bilhões movimentados em 2025.
+
+Do ponto de vista do jornalismo, a contribuição é de outra ordem e igualmente verificável: organizar, em um único produto, uma série de dados dispersos em releases oficiais, estudos de impacto e pesquisas setoriais, com a origem de cada número declarada. É o que a revista entrega e o que o Quadro de conferência desta ficha torna auditável.
 
 
 ---
@@ -510,6 +602,14 @@ Todas as referências foram consultadas e verificadas em 16 de setembro de 2026.
 - SAMARA, Timothy. Guia de design editorial: manual prático para o design de publicações. Tradução: Mariana Bandarra. Porto Alegre: Bookman, 2011.
 - LUPTON, Ellen. Pensar com tipos: guia para designers, escritores, editores e estudantes. São Paulo: Gustavo Gili, 2013.
 - MUNARI, Bruno. Das coisas nascem coisas. Tradução: José Manuel de Vasconcelos. 3. ed. São Paulo: Martins Fontes, 2015.
+- VILAS BOAS, Sergio. O estilo magazine: o texto em revista. São Paulo: Summus, 1996.
+- SODRÉ, Muniz; FERRARI, Maria Helena. Técnica de reportagem: notas sobre a narrativa jornalística. São Paulo: Summus, 1986.
+- MEDINA, Cremilda. Entrevista: o diálogo possível. São Paulo: Ática. (Citada a partir de MARIANO, 2018, que utiliza a edição de 1995, p. 30-31.)
+- LAGE, Nilson. A reportagem: teoria e técnica de entrevista e pesquisa jornalística. Rio de Janeiro: Record, 2001. (Citada a partir de MARIANO, 2018, p. 237-238.)
+- MARIANO, Agnes Francine de Carvalho. A entrevista como tema de pesquisa no campo da comunicação. Revista FAMECOS: mídia, cultura e tecnologia, v. 25, n. 2, 2018. DOI: 10.15448/1980-3729.2018.2.28307. Disponível em: https://www.redalyc.org/journal/4955/495557631006/html/. Acesso em: 16 set. 2026.
+- SOARES, Lenise Slawski; NEGRINI, Michele. As técnicas de entrevista utilizadas pelos jornalistas do Jornal Nacional com os presidenciáveis 2018. Revista Alterjor, v. 22, n. 2, p. 230-255, 2020. DOI: 10.11606/issn.2176-1507.v22i2p230-255. Disponível em: https://revistas.usp.br/alterjor/article/view/171023. Acesso em: 16 set. 2026.
+- SILVA, Gislene da. Relatório final: inserção dos Trabalhos de Conclusão de Curso (TCCs) do Curso de Jornalismo da UFSC no Repositório Institucional da Biblioteca Universitária. Florianópolis: Departamento de Jornalismo, UFSC, fev. 2020. Disponível em: https://repositorio.ufsc.br/bitstream/handle/123456789/209015/RELATORIO.pdf. Acesso em: 16 set. 2026.
+- JORNALISMO Literário: revisão conceitual, história e novas perspectivas. Intercom — Revista Brasileira de Ciências da Comunicação, v. 40, n. 3, p. 21-36, set./dez. 2017. Disponível em: https://www.scielo.br/j/interc/a/YywYmt85GZrc4NRsjHytXYm/?lang=pt. Acesso em: 16 set. 2026.
 
 ### 7.3. Dados de turismo — fluxo de visitantes e receita
 
@@ -564,6 +664,11 @@ Este quadro existe para uma coisa só: permitir que cada número desta ficha sej
 
 | O que esta escrito | Fonte e link para conferir | Citação pronta para o TCC |
 |---|---|---|
+| Produto jornalístico é a segunda modalidade mais frequente nos TCCs de Jornalismo, e a revista está nomeada na definição da modalidade | SILVA, Gislene da (UFSC, fev. 2020) — relatório de pesquisa do Departamento de Jornalismo<br>https://repositorio.ufsc.br/bitstream/handle/123456789/209015/RELATORIO.pdf | "O segundo tipo de trabalho mais encontrado foi produto jornalístico. Dentre os 72 finalizados, 18 eram documentários, o produto mais recorrente"; a modalidade é definida como aquela "em que o projeto jornalístico seja executado por completo, desde o projeto até a finalização, como a criação de um jornal ou revista ou de um documentário" (SILVA, 2020). |
+| O jornalista deve conduzir a entrevista, e não ser conduzido pelo entrevistado | LAGE, Nilson (2001), citado por MARIANO (2018), Revista FAMECOS, v. 25, n. 2<br>https://www.redalyc.org/journal/4955/495557631006/html/ | "O jornalista tem de conduzir a entrevista para onde quer, e não deixar-se conduzir pelo entrevistado" (LAGE, 2001, p. 237-238 apud MARIANO, 2018). |
+| A entrevista pode produzir uma interação social criadora | MEDINA, Cremilda (Entrevista: o diálogo possível), citada por MARIANO (2018)<br>https://www.redalyc.org/journal/4955/495557631006/html/ | "Haverá até a possibilidade de acontecer um ato culminante que se pode nomear como interação social criadora" (MEDINA, 1995, p. 30-31 apud MARIANO, 2018). |
+| A entrevista é pouco teorizada no campo da comunicação | MARIANO, Agnes Francine de Carvalho (2018), Revista FAMECOS, v. 25, n. 2, DOI 10.15448/1980-3729.2018.2.28307<br>https://www.redalyc.org/journal/4955/495557631006/html/ | "A entrevista vem sendo estudada de forma esporádica e fragmentada. São poucos os livros e artigos que tratam do tema" (MARIANO, 2018). |
+| O estilo magazine: o texto de revista como território privilegiado da reportagem | VILAS BOAS, Sergio (1996) e SODRÉ; FERRARI (1986), discutidos em artigo da Intercom/SciELO<br>https://www.scielo.br/j/interc/a/YywYmt85GZrc4NRsjHytXYm/?lang=pt | O gênero é considerado o mais nobre por Vilas Boas (1996) e ocupa lugar privilegiado no jornalismo segundo Sodré e Ferrari (1986). |
 | Rio recebeu 12,5 milhões de visitantes em 2025, que movimentaram R$ 27,2 bilhões; fluxo internacional cresceu 44,8% | Prefeitura do Rio (SMTUR-Rio, SMDE, Riotur / IFec RJ), 19 jan. 2026<br>https://prefeitura.rio/cidade/recorde-no-rio-cidade-recebeu-125-milhoes-de-visitantes-em-2025-que-movimentaram-r-272-bilhoes-na-economia/ | "a cidade do Rio recebeu 12,5 milhões de turistas", sendo "10,5 milhões (83,1%), de visitantes nacionais e 2,1 milhões (16,9%) de estrangeiros", com "uma movimentação total de R$ 27,2 bilhões" (PREFEITURA DO RIO, 2026) |
 | Chegada de estrangeiros ao Rio cresceu 51,7% em 2025, sobre 1.528.133 desembarques em 2024 | Embratur, 7 out. 2025<br>https://embratur.com.br/2025/10/07/rio-de-janeiro-registra-aumento-de-517-na-chegada-de-turistas-estrangeiros-em-2025-e-celebra-recorde-historico-de-visitantes/ | Segundo a Embratur (2025), o Rio de Janeiro registrou aumento de 51,7% na chegada de turistas estrangeiros em 2025, sobre a base de 1.528.133 desembarques internacionais em 2024. |
 | Brasil fechou 2025 com recorde de 9,3 milhões de turistas internacionais (+37,1%) | Secom / Presidência da Republica, jan. 2026<br>https://www.gov.br/secom/pt-br/acompanhe-a-secom/noticias/2026/01/brasil-alcanca-recorde-historico-e-fecha-2025-com-9-3-milhoes-de-turistas-internacionais | O Brasil registrou 9.287.196 chegadas de turistas estrangeiros em 2025, "o maior volume já observado na série histórica", com crescimento de 37,1% sobre 2024 (BRASIL, 2026). |
