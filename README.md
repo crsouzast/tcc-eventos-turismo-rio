@@ -14,6 +14,7 @@
 | **Revista** — 6 páginas, pronta para virar PDF com Ctrl+P | [`revista/revista.html`](revista/revista.html) |
 | **Pasta de fontes** — 15 fichas com ABNT, link, resumo e citações | [`fontes/00-INDICE-DE-FONTES.md`](fontes/00-INDICE-DE-FONTES.md) |
 | **Dados brutos** em CSV | [`dados/`](dados/) |
+| **Diretrizes da Pesquisa** — a ficha do projeto, com o que já está atendido | [`DIRETRIZES-DA-PESQUISA.md`](DIRETRIZES-DA-PESQUISA.md) |
 
 ---
 
