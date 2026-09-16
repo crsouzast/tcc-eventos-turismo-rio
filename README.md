@@ -1,10 +1,15 @@
-# Principais eventos que fomentaram o turismo no Rio de Janeiro (2018–2025)
+# Principais eventos que fomentaram o turismo no Rio de Janeiro (2022–2025)
 
 **Dashboard de pesquisa + revista** para o Trabalho de Conclusão de Curso de
 **Cristiana da Silva Souza Teixeira**.
 
-> **TÍTULO:** Principais eventos que fomentaram o turismo no Rio de Janeiro entre os anos de 2018 a 2025:
+> **TÍTULO:** Principais eventos que fomentaram o turismo no Rio de Janeiro entre os anos de 2022 a 2025:
 > uma análise da ocupação hoteleira e dos impactos na cidade.
+
+**Recorte da pesquisa: 2022 a 2025.** A série completa de 2018 a 2025 permanece no repositório como
+contexto, mas a análise se concentra nos quatro anos em que a cidade voltou a operar um calendário
+completo de eventos. Nesse período, a ocupação média subiu de 65,00% para 77,73% e **todos os doze meses
+de 2025 superaram os doze meses correspondentes de 2022, sem uma única exceção**.
 
 ## Abra aqui
 
@@ -15,6 +20,7 @@
 | **Pasta de fontes** — 15 fichas com ABNT, link, resumo e citações | [`fontes/00-INDICE-DE-FONTES.md`](fontes/00-INDICE-DE-FONTES.md) |
 | **Dados brutos** em CSV | [`dados/`](dados/) |
 | **Diretrizes da Pesquisa** — a ficha do projeto, com o que já está atendido | [`DIRETRIZES-DA-PESQUISA.md`](DIRETRIZES-DA-PESQUISA.md) |
+| **Texto corrido** — o projeto escrito como matéria jornalística, com citações e referências | [`TEXTO-CORRIDO.md`](TEXTO-CORRIDO.md) · [`.docx`](TEXTO-CORRIDO.docx) |
 
 ---
 

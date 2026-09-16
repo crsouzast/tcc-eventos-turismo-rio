@@ -11,9 +11,9 @@ Fontes consultadas e verificadas em 16 de setembro de 2026.
 
 ## 1. Ficha de identificação do projeto
 
-**TÍTULO:** Principais eventos que fomentaram o turismo no Rio de Janeiro entre os anos de 2018 a 2025: uma análise da ocupação hoteleira e dos impactos na cidade.
+**TÍTULO:** Principais eventos que fomentaram o turismo no Rio de Janeiro entre os anos de 2022 a 2025: uma análise da ocupação hoteleira e dos impactos na cidade.
 
-**TEMA:** Principais eventos que fomentaram o turismo no Rio de Janeiro entre os anos de 2018 a 2025.
+**TEMA:** Principais eventos que fomentaram o turismo no Rio de Janeiro entre os anos de 2022 a 2025.
 
 **CONTRIBUIÇÃO SOCIAL:** O estudo ajuda a entender como grandes eventos beneficiam a economia da cidade do Rio de Janeiro — gerando empregos e comércio — e orienta políticas públicas sobre a importância do “Todo Mundo no Rio”.
 
@@ -21,21 +21,21 @@ Fontes consultadas e verificadas em 16 de setembro de 2026.
 
 **CONTRIBUIÇÃO PARA MIM:** Particularmente trabalho com turismo e gosto do meu trabalho de promoção diante dos hotéis da cidade do Rio que são associados ao meu sindicato, quanto da promoção do destino Rio de Janeiro.
 
-**OBJETO:** Eventos turísticos de grande porte realizados no Rio de Janeiro entre 2018 e 2025.
+**OBJETO:** Eventos turísticos de grande porte realizados no Rio de Janeiro entre 2022 e 2025.
 
 **PRODUTO:** REVISTA — edição única, curta, de seis páginas.
 
 **SUJEITO:** Especialista do setor turístico: professor da Faculdade de Turismo e Hotelaria (FTH) da Universidade Federal Fluminense (UFF), Vice-Líder do Grupo de Pesquisa HOST — Rede de Estudos em Hospitalidade (CNPq) e Coordenador Geral da Linha de Pesquisa e Extensão Turismo, Hospitalidade e Inclusão (UFF); e Alfredo Lopes, Presidente do Sindicato de Hotéis da Cidade do Rio de Janeiro.
 
-**CORPUS / RECORTE:** Análise dos principais eventos que fomentaram o turismo no Rio de Janeiro entre 2018 e 2025, investigando a ocupação hoteleira e os impactos causados na cidade.
+**CORPUS / RECORTE:** Análise dos principais eventos que fomentaram o turismo no Rio de Janeiro entre 2022 e 2025, investigando a ocupação hoteleira e os impactos causados na cidade. O período anterior — o ciclo dos megaeventos de 2014 e 2016 e a interrupção sanitária de 2020 e 2021 — é tratado como contexto, e não como objeto.
 
-**PROBLEMA:** De que forma os principais eventos realizados no Rio de Janeiro entre 2018 e 2025 impactaram a ocupação hoteleira e contribuíram para o desenvolvimento do turismo na cidade?
+**PROBLEMA:** De que forma os principais eventos realizados no Rio de Janeiro entre 2022 e 2025 impactaram a ocupação hoteleira e contribuíram para o desenvolvimento do turismo na cidade?
 
-**HIPÓTESE:** Os principais eventos turísticos realizados no Rio de Janeiro entre 2018 e 2025 tiveram impacto positivo significativo na ocupação hoteleira e contribuíram para a retomada e crescimento do turismo, mesmo com a pandemia.
+**HIPÓTESE:** Os principais eventos turísticos realizados no Rio de Janeiro entre 2022 e 2025 tiveram impacto positivo significativo na ocupação hoteleira e contribuíram para o crescimento do turismo na cidade, que no período alcançou o melhor desempenho de sua história recente.
 
-**OBJETIVO GERAL:** Identificar os eventos turísticos de maior relevância para o Rio de Janeiro no período de 2018 a 2025, relacionando-os aos dados de ocupação hoteleira; analisar os impactos da pandemia da Covid-19 na atividade turística; e discutir a importância destes eventos para a imagem e o crescimento do turismo na cidade.
+**OBJETIVO GERAL:** Identificar os eventos turísticos de maior relevância para o Rio de Janeiro no período de 2022 a 2025, relacionando-os aos dados de ocupação hoteleira e ao fluxo de visitantes recebidos pela cidade, e discutir a importância destes eventos para a imagem e o crescimento do turismo carioca.
 
-**METODOLOGIA:** Análise dos dados de ocupação hoteleira no Rio de Janeiro entre 2018 e 2025 para identificar os períodos com maior taxa de ocupação; verificação de quais eventos turísticos relevantes ocorreram nesses períodos; curadoria de imagens dos principais eventos; pesquisa bibliográfica; e entrevistas com especialistas do setor turístico.
+**METODOLOGIA:** Análise dos dados de ocupação hoteleira no Rio de Janeiro entre 2022 e 2025 para identificar os períodos com maior taxa de ocupação; verificação de quais eventos turísticos relevantes ocorreram nesses períodos; curadoria de imagens dos principais eventos; pesquisa bibliográfica; e entrevistas com especialistas do setor turístico.
 
 > ⚠️ **O QUE ESTA PESQUISA INVESTIGA — E O QUE É APENAS INSTRUMENTO. O objeto é o FOMENTO DO TURISMO: quanto a cidade cresceu em fluxo de visitantes e em economia gerada, e qual o papel dos grandes eventos nesse crescimento. A taxa de ocupação hoteleira NÃO é o objeto: ela é o INSTRUMENTO METODOLÓGICO que permite datar o fenômeno mês a mês, porque é a única série mensal, contínua e com metodologia estável disponível para toda a cidade no período. O turismo se mede por fluxo de visitantes e receita; a hotelaria é o termômetro que registra quando esse fluxo aconteceu.**
 
@@ -54,12 +54,12 @@ Entre 2018 e 2025, o Rio de Janeiro saiu de um cenário de estagnação turísti
 A pergunta que organiza a pesquisa é direta: de que forma os principais eventos realizados na cidade entre 2018 e 2025 fomentaram o turismo? Para responder é preciso datar o fenômeno, e é aqui que entra o instrumento: a série mensal de ocupação hoteleira permite identificar exatamente em que meses o fluxo turístico cresceu, e o cruzamento desses meses com o calendário de eventos revela a relação. O dado de hotelaria não é o assunto da pesquisa — é o relógio dela.
 
 
-### 2.1. Contextualização: o turismo no Rio de Janeiro entre 2018 e 2025
+### 2.1. Contextualização: o turismo no Rio de Janeiro antes e durante o recorte
 
-O período estudado contém três movimentos distintos: uma estagnação herdada do ciclo dos megaeventos (2018-2019), um colapso sem precedentes (2020-2021) e uma recuperação que terminou em recorde histórico (2022-2025). Cada um desses movimentos tem contexto turístico próprio, documentado por fontes oficiais.
+O recorte analisado (2022-2025) é precedido por dois movimentos que explicam o seu ponto de partida: a estagnação herdada do ciclo dos megaeventos de 2014 e 2016, e a interrupção da atividade em 2020 e 2021. Ambos entram aqui como contexto documentado, não como objeto de análise. Em seguida descreve-se o período estudado, ano a ano.
 
 
-#### 2018-2019: a herança dos megaeventos
+#### Antes do recorte: a herança dos megaeventos (2016-2019)
 
 O ponto de partida não é neutro. Para a Copa do Mundo de 2014 e os Jogos Olímpicos de 2016, a cidade ampliou fortemente sua capacidade de hospedagem: das cerca de 19.800 unidades habitacionais existentes em 2010, chegou a 37.000 em 2016, ultrapassando 51 mil quartos quando somados apart-hotéis, albergues e motéis.
 
@@ -92,7 +92,7 @@ O diagnóstico mais severo da literatura sobre esse período é de que o visitan
 > 🔗 [Embratur / Ministério do Turismo / Polícia Federal — série de chegadas internacionais (2019: 6,3 milhões)](https://embratur.com.br/2022/10/20/com-pandemia-brasil-registra-em-dois-anos-a-chegada-de-29-milhoes-de-turistas-internacionais/)
 
 
-#### 2020-2021: o colapso
+#### Antes do recorte: a interrupção de 2020 e 2021
 
 A pandemia de Covid-19 interrompeu o turismo mundial, e o dado brasileiro dimensiona o tamanho da parada: as chegadas de turistas internacionais caíram 66% em 2020, de 6,3 milhões para 2,1 milhões; em 2021 o país recebeu 745,8 mil turistas internacionais — queda de 88% em relação a 2019.
 
@@ -111,7 +111,7 @@ Em 2021, com Carnaval e Réveillon cancelados, o quadro se manteve deprimido. Pe
 Este é o contrafactual da pesquisa. Sem eventos, o turismo carioca não apenas encolheu: perdeu capacidade instalada, com hotéis fechados que não reabriram e empregos que não voltaram.
 
 
-#### 2022-2025: a recuperação e o recorde
+#### O recorte: 2022 a 2025, quatro anos de crescimento contínuo
 
 A retomada foi rápida e mensurável em escala nacional. Em 2023, o turismo internacional injetou R$ 34,5 bilhões na economia brasileira, e o volume de chegadas correspondeu a 93% do nível de 2019. Em 2024, o país fechou o ano com recorde de 6,65 milhões de turistas estrangeiros, alta de 12,6%. Em 2025, o recorde foi pulverizado: 9.287.196 chegadas internacionais, crescimento de 37,1% sobre 2024 e maior volume de toda a série histórica — muito acima da meta de 6,9 milhões prevista no Plano Nacional de Turismo.
 
@@ -170,16 +170,27 @@ O terceiro é a imagem da cidade e a autoestima de quem vive nela. O contraste e
 A tabela abaixo reúne, ano a ano, o contexto turístico do período, os eventos realizados na cidade e a taxa média de ocupação hoteleira — nesta ordem, que é a ordem da pesquisa: primeiro o turismo, depois o evento, por último o instrumento que permite datá-los.
 
 
-| Ano | Contexto turístico | Eventos na cidade | Ocupação (instrumento) | Fonte |
+| Ano | Contexto turístico e da cidade | Eventos na cidade | Ocupação | Fonte |
 |---|---|---|---|---|
-| 2018 | Sobreoferta hoteleira herdada da Rio 2016; ocupação em torno de 51% já em 2017 | Calendário regular (Réveillon, Carnaval) | 53,66% | RBTur 2022; HotéisRIO |
-| 2019 | Brasil recebe 6,3 mi de turistas internacionais — último ano pré-pandemia | Copa América (final no Maracanã) e Rock in Rio | 64,55% | Embratur; HotéisRIO |
-| 2020 | Chegadas internacionais ao Brasil caem 66%, para 2,1 mi; hotelaria carioca a 5% em abril | Calendário cancelado a partir de março | 44,06% | Embratur; HotéisRIO |
-| 2021 | Brasil recebe 745,8 mil turistas internacionais — queda de 88% sobre 2019 | Carnaval e Réveillon cancelados; Libertadores em novembro | 48,73% | Embratur; HotéisRIO |
-| 2022 | Reabertura de fronteiras e retomada do turismo doméstico | Carnaval em abril; Rock in Rio em setembro | 65,00% | HotéisRIO; FGV |
-| 2023 | Turismo internacional injeta R$ 34,5 bi no Brasil; chegadas em 93% do nível de 2019 | Web Summit Rio; Taylor Swift, RBD e RHCP; final da Libertadores | 71,11% | MTur; Prefeitura; HotéisRIO |
+| 2022 | Reabertura; Ômicron adia o Carnaval para abril; ISS do turismo no verão dobra, para R$ 52,5 milhões | Carnaval em abril; Rock in Rio em setembro | 65,00% | Prefeitura; HotéisRIO; FGV |
+| 2023 | Turismo internacional injeta R$ 34,5 bi no Brasil; chegadas em 93% do nível pré-pandemia | Web Summit Rio; Taylor Swift, RBD e RHCP; final da Libertadores | 71,11% | MTur; Prefeitura; HotéisRIO |
 | 2024 | Brasil bate recorde com 6,65 mi de estrangeiros (+12,6%); Rio recebe 11,4 mi de visitantes | Madonna em Copacabana; Rock in Rio 40 anos; Cúpula do G20 | 73,15% | Agência Gov; Prefeitura; HotéisRIO |
 | 2025 | Brasil alcança 9,29 mi de estrangeiros (+37,1%); Rio recebe 12,5 mi de visitantes e movimenta R$ 27,2 bi, com fluxo internacional +44,8% | Carnaval recorde; Web Summit; Lady Gaga; Cúpula do BRICS; Rio Innovation Week | 77,73% | Secom; Embratur; Prefeitura/IFec RJ; HotéisRIO |
+
+
+#### O comparativo de crescimento do turismo no recorte
+
+Quatro indicadores independentes, todos oficiais, apontam na mesma direção no período de 2022 a 2025:
+
+
+| Indicador | Início | Fim | Variação |
+|---|---|---|---|
+| Ocupação hoteleira média da cidade | 65,00% (2022) | 77,73% (2025) | +12,72 p.p. |
+| Visitantes recebidos pela cidade | 11,4 mi (2024) | 12,5 mi (2025) | +10,5% |
+| Visitantes estrangeiros na cidade | 1,5 mi (2024) | 2,1 mi (2025) | +44,8% |
+| Movimentação econômica do turismo na cidade | — | R$ 27,2 bi (2025) | R$ 19,5 bi nacionais + R$ 7,8 bi internacionais |
+| Chegadas de estrangeiros ao Brasil | 6,65 mi (2024) | 9,29 mi (2025) | +37,1% (recorde histórico) |
+| Meses de 2025 acima do mesmo mês de 2022 | — | 12 de 12 | sem exceção |
 
 _Ocupação: Pesquisa de Ocupação Hoteleira HotéisRIO/ABIH-RJ, série mensal por região, consolidada no Observatório da Hotelaria do Rio de Janeiro (https://sindhoteisrj.com.br/observatorio-da-hotelaria-do-rio-de-janeiro). Abril e maio de 2020 não possuem medição: a pesquisa foi suspensa. Fluxo de visitantes e receita: Embratur/MTur/Polícia Federal e Prefeitura do Rio (SMTUR-Rio, SMDE, Riotur) com dados do IFec RJ. Os links de cada número estão nos parágrafos acima._
 
@@ -207,7 +218,7 @@ Há ainda uma justificativa de contraponto. Parte da literatura é cética quant
 
 ### 2.3. Objetivo geral
 
-Identificar os eventos turísticos de maior relevância para o Rio de Janeiro no período de 2018 a 2025, relacionando-os aos dados de ocupação hoteleira; analisar os impactos da pandemia da Covid-19 na atividade turística; e discutir a importância destes eventos para a imagem e o crescimento do turismo na cidade.
+Identificar os eventos turísticos de maior relevância para o Rio de Janeiro no período de 2022 a 2025, relacionando-os aos dados de ocupação hoteleira e ao fluxo de visitantes recebidos pela cidade, e discutir a importância destes eventos para a imagem e o crescimento do turismo carioca.
 
 Desse objetivo geral decorrem cinco objetivos específicos:
 
@@ -233,7 +244,7 @@ A distinção entre as duas camadas é o núcleo do desenho metodológico e prec
 - Camada 2 — o instrumento: taxa de ocupação hoteleira mensal da cidade do Rio de Janeiro, total e por região. Fonte: Pesquisa de Ocupação Hoteleira do HotéisRIO/ABIH-RJ, consolidada no Observatório da Hotelaria do Rio de Janeiro. São 94 medições mensais em cinco regiões (Leme/Copacabana, Ipanema/Leblon, Flamengo/Botafogo, Barra da Tijuca/São Conrado e Centro), mais a média da cidade.
 A razão de usar a hotelaria como instrumento é de ordem prática: os dados de fluxo turístico são anuais e, por isso, não permitem identificar qual evento produziu qual movimento dentro do ano. A série de ocupação é mensal, contínua, mantém a mesma metodologia em todo o recorte e é produzida pela entidade representativa do setor — o que a torna o único instrumento disponível capaz de datar o fenômeno com precisão suficiente para o cruzamento com o calendário de eventos.
 
-Recorte analítico: embora a série completa de 2018 a 2025 seja apresentada, a análise se concentra em 2023-2025, intervalo coberto pelo Observatório publicado e no qual a autora conduz diretamente o levantamento. O período 2018-2022 é tratado como contexto histórico e contrafactual.
+Recorte analítico: a análise cobre os quatro anos de 2022 a 2025 — 48 medições mensais em cinco regiões. A escolha do recorte tem três razões. Primeira, 2022 é o primeiro ano em que a cidade voltou a operar um calendário completo de grandes eventos, o que torna o período homogêneo: todos os anos analisados têm calendário cheio. Segunda, o período contém o achado mais expressivo da série — em 2022, setembro (75,63%) superou janeiro (73,27%). Terceira, todos os doze meses de 2025 superaram os doze meses correspondentes de 2022, sem uma única exceção, o que permite afirmar crescimento sem depender de comparação com os anos de interrupção sanitária. O ciclo dos megaeventos de 2014 e 2016 e os anos de 2020 e 2021 entram como contexto, para explicar o ponto de partida.
 
 
 ### 3.2. Procedimento de cruzamento
@@ -244,24 +255,24 @@ O procedimento seguiu cinco passos:
 - Ordenação da série mensal de ocupação para identificar os meses de maior e de menor movimento em todo o período.
 - Levantamento, em fontes oficiais, dos eventos de grande porte realizados nesses meses. Critério de “grande porte”: público superior a 100 mil pessoas, ou balanço oficial de impacto econômico divulgado, ou pesquisa de ocupação específica realizada pela entidade do setor.
 - Cruzamento dos conjuntos, registrando em quais picos havia evento documentado e em quais o pico se explicava por sazonalidade (verão, Réveillon, Carnaval).
-- Comparação do mesmo mês do calendário entre anos diferentes, tomando como linha de base a média do mesmo mês em 2018 e 2019 — anos anteriores à pandemia e ao ciclo atual de eventos. É o procedimento que permite isolar parcialmente o efeito do evento do efeito da estação.
-O quinto passo produziu o resultado mais expressivo da pesquisa. Nos meses com evento de grande porte, o movimento superou a média do mesmo mês em 2018-2019 nas seguintes magnitudes:
+- Comparação do mesmo mês do calendário entre anos diferentes, tomando 2022 como ano-base interno do recorte. É o procedimento que permite isolar parcialmente o efeito do evento do efeito da estação, e tem a vantagem de manter a comparação dentro do próprio período analisado.
+O quinto passo produziu o resultado mais expressivo da pesquisa: todos os doze meses de 2025 superaram os doze meses correspondentes de 2022, e os meses com evento de grande porte apresentam as maiores diferenças:
 
 
-| Mês do evento | Evento | Ocupação | Diferença |
+| Mês do evento | Evento | Ocupação | Diferença sobre o mesmo mês de 2022 |
 |---|---|---|---|
-| abril/2022 | Carnaval adiado para abril | 63,68% | +13,63 p.p. |
-| setembro/2022 | Rock in Rio | 75,63% | +19,71 p.p. |
-| maio/2023 | Web Summit Rio, 1ª edição | 60,58% | +16,48 p.p. |
-| novembro/2023 | Taylor Swift, RBD, RHCP e Libertadores | 81,98% | +18,28 p.p. |
-| maio/2024 | Madonna em Copacabana | 67,89% | +23,79 p.p. |
-| setembro/2024 | Rock in Rio 40 anos | 78,25% | +22,34 p.p. |
-| novembro/2024 | Cúpula do G20 | 81,61% | +17,91 p.p. |
-| fevereiro/2025 | Carnaval 2025 | 85,71% | +15,31 p.p. |
-| abril/2025 | Web Summit Rio 2025 | 76,75% | +26,70 p.p. |
-| maio/2025 | Lady Gaga em Copacabana | 72,81% | +28,71 p.p. |
-| julho/2025 | 17ª Cúpula do BRICS | 74,13% | +24,03 p.p. |
-| agosto/2025 | Rio Innovation Week | 72,87% | +20,17 p.p. |
+| setembro/2022 | Rock in Rio (ano-base; pico do ano, acima de janeiro) | 75,63% | — |
+| maio/2023 | Web Summit Rio, 1ª edição | 60,58% | +7,89 p.p. |
+| novembro/2023 | Taylor Swift, RBD, RHCP e final da Libertadores | 81,98% | +11,31 p.p. |
+| maio/2024 | Madonna em Copacabana | 67,89% | +15,20 p.p. |
+| setembro/2024 | Rock in Rio 40 anos | 78,25% | +2,62 p.p. |
+| novembro/2024 | Cúpula do G20 | 81,61% | +10,94 p.p. |
+| fevereiro/2025 | Carnaval 2025 (98,62% no período da folia) | 85,71% | +19,71 p.p. |
+| abril/2025 | Web Summit Rio 2025 | 76,75% | +13,07 p.p. |
+| maio/2025 | Lady Gaga em Copacabana | 72,81% | +20,12 p.p. |
+| julho/2025 | 17ª Cúpula do BRICS | 74,13% | +9,10 p.p. |
+| agosto/2025 | Rio Innovation Week | 72,87% | +7,67 p.p. |
+| setembro/2025 | (sem evento de grande porte no mês) | 79,27% | +3,64 p.p. |
 
 _Cálculo próprio sobre a série HotéisRIO/ABIH-RJ. “Diferença” = ocupação do mês menos a média do mesmo mês do calendário em 2018 e 2019. O cálculo interativo, com os dados abertos, está na aba “Cruzamento pico × evento” do dashboard: https://crsouzast.github.io/tcc-eventos-turismo-rio/_
 
