@@ -26,8 +26,10 @@ Rio de Janeiro.
 **PRODUTO:** Revista curta (edição única, 6 páginas) sobre o tema.
 
 **SUJEITO:**
-- Professor de Turismo da UFF
-- Presidente do Sindicato de Hotéis da Cidade do Rio de Janeiro
+- Professor da Faculdade de Turismo e Hotelaria (FTH) da Universidade Federal Fluminense (UFF),
+  Vice-Líder do Grupo de Pesquisa HOST — Rede de Estudos em Hospitalidade (CNPq) e Coordenador Geral da
+  Linha de Pesquisa e Extensão Turismo, Hospitalidade e Inclusão (UFF)
+- Alfredo Lopes, Presidente do Sindicato de Hotéis da Cidade do Rio de Janeiro
 
 **CORPUS / RECORTE:** Será realizada uma análise dos principais eventos que fomentaram o turismo no Rio
 de Janeiro entre 2018 e 2025, investigando a ocupação hoteleira e os impactos causados na cidade.

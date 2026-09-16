@@ -87,7 +87,7 @@ pesquisa de propaganda.
 ## O que ainda falta e só você pode fazer
 
 1. **As duas entrevistas.** Os roteiros estão prontos na aba *Entrevista e revista* do dashboard — um
-   para o professor de Turismo da UFF, outro para o Presidente do Sindicato.
+   para o professor da FTH/UFF (Grupo HOST/CNPq), outro para Alfredo Lopes, Presidente do Sindicato.
 2. **A curadoria de imagens** dos eventos, prevista na sua metodologia. Cuidado com direito de imagem:
    prefira fotos da Prefeitura, da Riotur ou da Agência Brasil, que têm licença de uso mais aberta.
 3. **Confirmar dois dados:** o valor de março de 2019 (90,66%) parece erro de digitação na base
