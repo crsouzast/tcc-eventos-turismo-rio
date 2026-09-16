@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O Rio que lotou · revista</title>
+<style>
+  :root{
+    --papel:#faf7f1; --tinta:#16181c; --tinta2:#4a5058; --tinta3:#8a9098;
+    --azul:#123a6b; --coral:#c8452f; --areia:#c9a227; --verde:#1f6f52;
+    --serif:Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#3a3d42;color:var(--tinta);font-family:var(--sans);
+    -webkit-font-smoothing:antialiased}
+  .barra{background:#22252a;color:#c8ccd2;font-size:13px;padding:12px 20px;text-align:center}
+  .barra b{color:#fff}
+  .pag{background:var(--papel);width:210mm;min-height:297mm;margin:22px auto;padding:22mm 20mm;
+    box-shadow:0 8px 30px rgba(0,0,0,.4);position:relative;page-break-after:always}
+  .fol{position:absolute;bottom:12mm;left:20mm;right:20mm;display:flex;justify-content:space-between;
+    font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--tinta3);
+    border-top:1px solid #ddd6c8;padding-top:7px}
+
+  h1,h2,h3,h4{font-family:var(--serif);letter-spacing:-.4px}
+  .olho{font-family:var(--sans);font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--coral);font-weight:700}
+  h2.tit{font-size:30px;line-height:1.14;margin:10px 0 12px}
+  .linha-fina{font-size:15px;color:var(--tinta2);font-family:var(--serif);font-style:italic;
+    margin:0 0 20px;line-height:1.5}
+  p{font-family:var(--serif);font-size:13.5px;line-height:1.72;margin:0 0 12px;text-align:justify}
+  p.cred{font-family:var(--sans);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--tinta3);margin-bottom:18px}
+  .cols{column-count:2;column-gap:9mm}
+  .cols p:first-child::first-letter{font-size:40px;line-height:.82;float:left;padding:4px 7px 0 0;
+    color:var(--azul);font-family:var(--serif);font-weight:700}
+
+  /* capa */
+  .capa{background:linear-gradient(170deg,#0e2a4d 0%,#123a6b 45%,#1b5480 100%);color:#fff;
+    display:flex;flex-direction:column;justify-content:space-between}
+  .capa .mark{font-family:var(--sans);font-size:11px;letter-spacing:.3em;text-transform:uppercase;
+    color:#9dc3ea}
+  .capa h1{font-size:62px;line-height:.98;margin:0 0 14px;color:#fff}
+  .capa h1 span{color:#f0c85a}
+  .capa .chapeu{font-family:var(--sans);font-size:12px;letter-spacing:.2em;text-transform:uppercase;
+    color:#f0c85a;margin-bottom:10px}
+  .capa .sub{font-family:var(--serif);font-size:17px;line-height:1.48;color:#dbe7f3;max-width:34ch;font-style:italic}
+  .capa .numerao{display:flex;gap:26px;margin-top:26px;flex-wrap:wrap}
+  .capa .numerao div{border-top:2px solid #f0c85a;padding-top:7px}
+  .capa .numerao b{display:block;font-family:var(--serif);font-size:30px;line-height:1}
+  .capa .numerao small{font-family:var(--sans);font-size:10px;letter-spacing:.1em;
+    text-transform:uppercase;color:#9dc3ea}
+  .capa .rod{font-family:var(--sans);font-size:11px;color:#9dc3ea;line-height:1.7}
+
+  /* elementos */
+  .caixa{background:#fff;border:1px solid #e2dccf;border-left:3px solid var(--azul);
+    padding:14px 16px;margin:0 0 16px;break-inside:avoid}
+  .caixa h4{margin:0 0 7px;font-size:14px;color:var(--azul)}
+  .caixa p{font-size:12.5px;margin-bottom:7px}
+  .caixa p:last-child{margin-bottom:0}
+  blockquote{margin:16px 0;padding:0 0 0 16px;border-left:3px solid var(--coral);
+    font-family:var(--serif);font-size:16px;line-height:1.5;font-style:italic;color:var(--azul)}
+  blockquote cite{display:block;margin-top:8px;font-family:var(--sans);font-size:10px;
+    letter-spacing:.08em;text-transform:uppercase;font-style:normal;color:var(--tinta3)}
+  .destaque-num{font-family:var(--serif);font-size:44px;line-height:1;color:var(--coral);margin:0}
+  .destaque-num + p{font-family:var(--sans);font-size:11px;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--tinta3);text-align:left}
+  .sumario{list-style:none;padding:0;margin:0}
+  .sumario li{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid #e6e0d3;
+    font-family:var(--serif);font-size:13.5px;align-items:baseline}
+  .sumario b{font-family:var(--sans);font-size:11px;color:var(--coral);min-width:26px;letter-spacing:.06em}
+  .sumario span{color:var(--tinta3);font-family:var(--sans);font-size:11px;margin-left:auto;white-space:nowrap}
+  .ficha{font-family:var(--sans);font-size:10.5px;line-height:1.75;color:var(--tinta2)}
+  .ficha b{color:var(--tinta)}
+  svg{display:block;max-width:100%;height:auto;margin:0 0 6px}
+  .legenda{font-family:var(--sans);font-size:9.5px;color:var(--tinta3);margin:0 0 18px;text-align:left}
+  .mini{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 16px}
+  .mini div{background:#fff;border:1px solid #e2dccf;padding:11px 13px}
+  .mini b{font-family:var(--serif);font-size:22px;display:block;color:var(--azul)}
+  .mini small{font-family:var(--sans);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--tinta3)}
+  .fontes-pe{font-family:var(--sans);font-size:9.5px;color:var(--tinta3);line-height:1.6;
+    border-top:1px solid #e6e0d3;padding-top:9px;margin-top:16px}
+
+  @media print{
+    body{background:#fff}
+    .barra{display:none}
+    .pag{margin:0;box-shadow:none;width:auto;min-height:auto}
+    @page{size:A4;margin:0}
+  }
+  @media(max-width:230mm){
+    .pag{width:auto;max-width:100%;padding:24px 20px;min-height:auto}
+    .capa h1{font-size:40px}
+    .cols{column-count:1}
+    .fol{position:static;margin-top:26px;left:auto;right:auto}
+  }
+</style>
+</head>
+<body>
+
+<div class="barra">
+  Revista-produto do TCC · <b>6 páginas</b> · Para gerar o PDF: <b>Ctrl+P</b> (ou Cmd+P) → Salvar como PDF → margens "Nenhuma"
+</div>
+
+<!-- ============ CAPA ============ -->
+<div class="pag capa">
+  <div>
+    <div class="mark">Turismo · Rio de Janeiro · Edição única</div>
+  </div>
+  <div>
+    <div class="chapeu">Ocupação hoteleira 2018 — 2025</div>
+    <h1>O Rio<br>que <span>lotou</span></h1>
+    <p class="sub">Como os grandes eventos tiraram a hotelaria carioca do pior ano da sua história
+      e a levaram ao melhor.</p>
+    <div class="numerao">
+      <div><b>19,78%</b><small>julho de 2020</small></div>
+      <div><b>77,73%</b><small>média de 2025</small></div>
+      <div><b>98,62%</b><small>Carnaval de 2025</small></div>
+    </div>
+  </div>
+  <div class="rod">
+    Cristiana da Silva Souza Teixeira<br>
+    Trabalho de Conclusão de Curso · 2026<br>
+    Dados: Pesquisa de Ocupação Hoteleira HotéisRIO / ABIH-RJ
+  </div>
+</div>
+
+<!-- ============ P2 — EDITORIAL + SUMÁRIO ============ -->
+<div class="pag">
+  <div class="olho">Editorial</div>
+  <h2 class="tit">Um número por mês, oito anos de cidade</h2>
+  <p class="cred">Por Cristiana da Silva Souza Teixeira</p>
+
+  <p>Todo mês, os hotéis da cidade do Rio de Janeiro informam quantos quartos venderam. Desse gesto
+    repetido nasce uma linha — e essa linha conta a história recente da cidade melhor do que muitos
+    discursos. Ela sobe no verão, cai no outono, desaba em 2020, hesita em 2021 e então começa a subir
+    sem parar. Em 2025 chega ao ponto mais alto de toda a série.</p>
+
+  <p>Esta revista percorre essa linha procurando uma coisa só: o que aconteceu na cidade nos meses em
+    que ela subiu. A resposta quase nunca é o clima e quase sempre é um evento. Um festival na Barra.
+    Um show gratuito em Copacabana. Uma cúpula de chefes de Estado. Uma feira de tecnologia na Zona
+    Portuária. Foi assim que setembro passou a valer mais que janeiro, e que maio deixou de ser o mês
+    morto do calendário.</p>
+
+  <p>Nada aqui é estimativa de gaveta. Cada número tem origem declarada: a pesquisa de ocupação do
+    sindicato dos hotéis, os estudos da Prefeitura do Rio, os balanços do Governo do Estado, a Agência
+    Brasil, o IBGE e a Fundação Getulio Vargas. Onde a fonte é projeção, e não apuração, está dito.
+    Onde o dado é duvidoso, também.</p>
+
+  <h3 style="margin:24px 0 8px;font-size:15px;color:var(--azul)">Nesta edição</h3>
+  <ul class="sumario">
+    <li><b>03</b> Oito anos em uma curva <span>Infográfico</span></li>
+    <li><b>04</b> O ano que não houve <span>2020 — 2021</span></li>
+    <li><b>05</b> O festival que venceu o verão <span>Rock in Rio</span></li>
+    <li><b>05</b> Maio não é mais mês morto <span>Madonna e Lady Gaga</span></li>
+    <li><b>06</b> Terno em vez de camiseta <span>G20, BRICS, Web Summit, RIW</span></li>
+    <li><b>06</b> O Carnaval que lotou tudo <span>98,62%</span></li>
+  </ul>
+
+  <div class="caixa" style="margin-top:22px">
+    <h4>Como esta revista foi feita</h4>
+    <p>Primeiro a série mensal de ocupação da cidade, de janeiro de 2018 a dezembro de 2025, foi ordenada
+      para identificar os meses de maior e de menor taxa. Depois, levantou-se em fontes oficiais quais
+      eventos de grande porte aconteceram nesses meses. Por fim, comparou-se o mesmo mês do calendário em
+      anos diferentes — é isso que separa efeito de evento de simples sazonalidade.</p>
+  </div>
+
+  <div class="fol"><span>O Rio que lotou</span><span>Editorial</span><span>2</span></div>
+</div>
+
+<!-- ============ P3 — INFOGRÁFICO ============ -->
+<div class="pag">
+  <div class="olho">Infográfico</div>
+  <h2 class="tit">Oito anos em uma curva</h2>
+  <p class="linha-fina">Média anual da taxa de ocupação hoteleira da cidade do Rio de Janeiro. Cada barra
+    é um ano; cada ano é uma história de eventos — ou da ausência deles.</p>
+
+  <svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg">
+    <g font-family="Georgia, serif" font-size="10" fill="#8a9098">
+      <line x1="54" y1="245" x2="620" y2="245" stroke="#c9c2b4"/>
+      <line x1="54" y1="190" x2="620" y2="190" stroke="#e6e0d3"/>
+      <line x1="54" y1="135" x2="620" y2="135" stroke="#e6e0d3"/>
+      <line x1="54" y1="80"  x2="620" y2="80"  stroke="#e6e0d3"/>
+      <text x="46" y="248" text-anchor="end">0%</text>
+      <text x="46" y="193" text-anchor="end">30%</text>
+      <text x="46" y="138" text-anchor="end">60%</text>
+      <text x="46" y="83"  text-anchor="end">90%</text>
+    </g>
+    <!-- barras: 53,66 / 64,55 / 44,06 / 48,73 / 65,00 / 71,11 / 73,15 / 77,73  (1% = 1,833px) -->
+    <g>
+      <rect x="66"  y="147.6" width="48" height="97.4"  fill="#123a6b" opacity=".85"/>
+      <rect x="136" y="127.6" width="48" height="117.4" fill="#123a6b" opacity=".85"/>
+      <rect x="206" y="164.2" width="48" height="80.8"  fill="#c8452f"/>
+      <rect x="276" y="155.6" width="48" height="89.4"  fill="#c8452f" opacity=".72"/>
+      <rect x="346" y="125.8" width="48" height="119.2" fill="#123a6b" opacity=".85"/>
+      <rect x="416" y="114.6" width="48" height="130.4" fill="#123a6b" opacity=".9"/>
+      <rect x="486" y="110.9" width="48" height="134.1" fill="#123a6b" opacity=".95"/>
+      <rect x="556" y="102.5" width="48" height="142.5" fill="#1f6f52"/>
+    </g>
+    <g font-family="Georgia, serif" font-size="11.5" fill="#16181c" font-weight="bold" text-anchor="middle">
+      <text x="90"  y="141">53,7</text>
+      <text x="160" y="121">64,6</text>
+      <text x="230" y="158" fill="#c8452f">44,1</text>
+      <text x="300" y="149" fill="#c8452f">48,7</text>
+      <text x="370" y="119">65,0</text>
+      <text x="440" y="108">71,1</text>
+      <text x="510" y="104">73,2</text>
+      <text x="580" y="96" fill="#1f6f52">77,7</text>
+    </g>
+    <g font-family="-apple-system, Helvetica, sans-serif" font-size="11" fill="#4a5058" text-anchor="middle">
+      <text x="90"  y="262">2018</text>
+      <text x="160" y="262">2019</text>
+      <text x="230" y="262">2020</text>
+      <text x="300" y="262">2021</text>
+      <text x="370" y="262">2022</text>
+      <text x="440" y="262">2023</text>
+      <text x="510" y="262">2024</text>
+      <text x="580" y="262">2025</text>
+    </g>
+    <g font-family="-apple-system, Helvetica, sans-serif" font-size="9" fill="#8a9098" text-anchor="middle">
+      <text x="90"  y="277">pós-Olimpíadas</text>
+      <text x="160" y="277">Copa América</text>
+      <text x="230" y="277" fill="#c8452f">pandemia</text>
+      <text x="300" y="277" fill="#c8452f">sem Carnaval</text>
+      <text x="370" y="277">Rock in Rio</text>
+      <text x="440" y="277">Taylor Swift</text>
+      <text x="510" y="277">Madonna · G20</text>
+      <text x="580" y="277" fill="#1f6f52">recorde</text>
+    </g>
+  </svg>
+  <p class="legenda">Fonte: Pesquisa de Ocupação Hoteleira HotéisRIO/ABIH-RJ, série mensal consolidada no
+    Observatório da Hotelaria do Rio de Janeiro. Média simples das medições mensais de cada ano. Abril e
+    maio de 2020 não têm medição: a pesquisa foi suspensa.</p>
+
+  <div class="mini">
+    <div><b>+33,7 p.p.</b><small>de 2020 a 2025</small></div>
+    <div><b>+24,1 p.p.</b><small>de 2018 a 2025</small></div>
+    <div><b>19,78%</b><small>julho de 2020, pior mês da série</small></div>
+    <div><b>85,71%</b><small>fevereiro de 2025, melhor mês confiável</small></div>
+  </div>
+
+  <p>Três leituras saltam do gráfico. A primeira: a queda de 2020 é real e brutal, mas curta — em dois
+    anos a cidade já estava acima do patamar de 2019. A segunda: o crescimento do pós-pandemia não é um
+    repique, é uma escada, com degrau em cada ano. A terceira, e a mais importante para esta reportagem:
+    2025 supera 2018 em mais de vinte pontos percentuais, e nenhum desses pontos veio de praia ou de sol,
+    porque praia e sol o Rio sempre teve.</p>
+
+  <div class="fol"><span>O Rio que lotou</span><span>Infográfico</span><span>3</span></div>
+</div>
+
+<!-- ============ P4 — 2020 ============ -->
+<div class="pag">
+  <div class="olho">Reportagem · o contrafactual</div>
+  <h2 class="tit">O ano que não houve</h2>
+  <p class="linha-fina">Sem eventos, a hotelaria carioca chegou a 19,78% de ocupação e perdeu R$ 1,6
+    bilhão em doze meses. É o capítulo que prova a tese pela ausência.</p>
+
+  <div class="cols">
+    <p>Em março de 2020, a ocupação dos hotéis da cidade girava em torno de 70%. Em abril, caiu para cerca
+      de 5%. A queda foi tão rápida que a própria pesquisa mensal do setor foi suspensa: abril e maio de
+      2020 são as duas únicas lacunas de uma série de oito anos. A lacuna é, ela própria, um dado.</p>
+
+    <p>Em maio, cerca de noventa hotéis e albergues estavam fora de operação. Mais de um quarto dos postos
+      de trabalho do setor foi suspenso, de forma temporária ou definitiva, e sete estabelecimentos
+      fecharam as portas para não mais reabrir. O balanço de doze meses de pandemia divulgado pelo
+      sindicato dos hotéis apontou prejuízo acumulado de aproximadamente R$ 1,6 bilhão.</p>
+
+    <p>A reabertura começou timidamente em junho e ganhou força em agosto, puxada pelo turismo doméstico
+      e por viagens rodoviárias em núcleos familiares. Esse detalhe explica muita coisa: sem evento, o
+      destino só consegue atrair o visitante de proximidade — o que gasta menos e fica menos tempo.</p>
+
+    <p>2021 confirmou a regra pelo avesso. Carnaval cancelado, Réveillon cancelado, média anual de 48,73%.
+      Janeiro de 2021, que deveria ser o mês mais forte do ano, marcou 49,46% — trinta e cinco pontos
+      percentuais abaixo de janeiro de 2025. A curva só volta a subir no fim de 2021, quando os eventos com
+      público retornam e o Maracanã recebe a final da Libertadores. Dezembro fecha em 65,01%.</p>
+
+    <p>É por isso que este capítulo importa mais que os outros. Para provar que evento move ocupação, não
+      basta mostrar os anos em que houve evento. É preciso mostrar o ano em que não houve.</p>
+  </div>
+
+  <blockquote>A ocupação caiu de cerca de 70% no início de março de 2020 para aproximadamente 5% em abril.
+    <cite>Balanço do HotéisRIO, abril de 2021 — ficha F08</cite></blockquote>
+
+  <div class="caixa">
+    <h4>Janeiro, dois retratos</h4>
+    <p><b>Janeiro de 2021 — 49,46%.</b> Réveillon cancelado, fronteiras instáveis, cidade fechada.</p>
+    <p><b>Janeiro de 2025 — 84,41%.</b> Réveillon de Copacabana com mais de 96% dos quartos vendidos na
+      noite da virada.</p>
+  </div>
+
+  <p class="fontes-pe"><b>Fontes:</b> PANROTAS, "Hotelaria do Rio registra prejuízo de R$ 1,6 bi em um ano"
+    (abr. 2021); Revista Hotéis, balanço do HotéisRIO após um ano de pandemia; Brasil de Fato (ago. 2020);
+    Agência Brasil, "Ocupação hoteleira do Rio passa de 96% para o Réveillon" (30 dez. 2024); série mensal
+    HotéisRIO/ABIH-RJ. Fichas F08 e F14.</p>
+
+  <div class="fol"><span>O Rio que lotou</span><span>2020 — 2021</span><span>4</span></div>
+</div>
+
+<!-- ============ P5 — ROCK IN RIO + MAIO ============ -->
+<div class="pag">
+  <div class="olho">Reportagem · cultura</div>
+  <h2 class="tit">O festival que venceu o verão</h2>
+  <p class="linha-fina">Em setembro de 2022, o Rock in Rio fez um mês qualquer superar janeiro. Dois anos
+    depois, movimentou R$ 2,6 bilhões e criou 32,6 mil postos de trabalho.</p>
+
+  <p>No Rio de Janeiro, janeiro sempre ganha. É o mês do verão, do Réveillon recém-passado, das férias.
+    Em 2022, não ganhou. Setembro fechou com 75,63% de ocupação contra 73,27% de janeiro — e a diferença
+    tem nome: Rock in Rio, primeiro megafestival com público pleno depois da pandemia, realizado entre 2
+    e 11 de setembro. Setecentas mil pessoas, R$ 1,7 bilhão de impacto segundo a Fundação Getulio Vargas,
+    28 mil empregos diretos e 83,61% dos quartos da cidade reservados no período.</p>
+
+  <p>Para medir o tamanho disso, basta comparar o mesmo mês em anos diferentes: setembro de 2018 valia
+    53,00%. Setembro de 2022 valeu 75,63%. Mais de vinte e dois pontos percentuais de diferença no mesmo
+    ponto do calendário.</p>
+
+  <p>A edição de 2024, dos quarenta anos do festival, foi maior ainda e é o evento de maior impacto
+    econômico isolado de todo o período estudado: R$ 2,6 bilhões para a economia do estado, 32,6 mil postos
+    de trabalho segundo a FGV, comércio faturando 24% mais e reservas em alta de 30,7%. A ocupação hoteleira
+    chegou a 88% na média da cidade nos dois fins de semana e passou de 90% em Ipanema e Leblon. No Galeão
+    foram 380 voos extras, com 47 mil passageiros nos dias de evento. Quase metade do público veio de fora
+    do estado, de 31 países.</p>
+
+  <blockquote>Um balanço dos sete dias do Rock in Rio indica que o festival gerou R$ 2,6 bilhões para a
+    economia do estado do Rio de Janeiro.<cite>Agência Brasil, 23 de setembro de 2024 — ficha F05</cite></blockquote>
+
+  <hr style="border:0;border-top:1px solid #e6e0d3;margin:24px 0">
+
+  <div class="olho">Reportagem · política de destino</div>
+  <h2 class="tit" style="font-size:25px">Maio não é mais mês morto</h2>
+  <p class="linha-fina">Madonna em 2024, Lady Gaga em 2025. Dois shows gratuitos na areia de Copacabana
+    transformaram o pior mês do calendário carioca em alta estação.</p>
+
+  <p>Em 2018, maio era o fundo do poço da hotelaria carioca: 38,00% de ocupação. Em 2025, maio marcou
+    72,81%. Entre uma data e outra houve dois shows na areia de Copacabana, os dois de graça, os dois
+    patrocinados com dinheiro público.</p>
+
+  <p>Madonna, em 4 de maio de 2024, reuniu 1,6 milhão de pessoas, entre elas cerca de 150 mil turistas,
+    com a rede hoteleira a 96% de ocupação e Copacabana perto de 100%. A Prefeitura projetou R$ 293,4
+    milhões de movimentação e um retorno trinta vezes maior que o patrocínio aportado. O Governo do Estado,
+    em balanço posterior, falou em cerca de R$ 300 milhões.</p>
+
+  <p>No ano seguinte, Lady Gaga levou 2,1 milhões de pessoas ao mesmo lugar — o maior público da carreira
+    da artista — e o impacto estimado dobrou: mais de R$ 600 milhões, para um custo de R$ 92 milhões. A
+    ocupação passou de 95% em Copacabana e nos bairros vizinhos.</p>
+
+  <p>A repetição é o que importa aqui. Um show em maio pode ser sorte; dois, em dois anos seguidos, com
+    resultado crescente, é política pública deliberada de destino — e, do ponto de vista de quem administra
+    a cidade, é o argumento mais forte desta revista.</p>
+
+  <p class="fontes-pe"><b>Fontes:</b> Agência Brasil (23 set. 2024); Hotelier News/FGV; Diário do Rio
+    (Rock in Rio 2022); Prefeitura do Rio — SMDUE e SMTUR, "Show de Madonna vai movimentar R$ 293,4 milhões"
+    (13 abr. 2024); Prefeitura do Rio — SMDE e Riotur, show de Lady Gaga (2 maio 2025); série mensal
+    HotéisRIO/ABIH-RJ. Fichas F04, F05, F06 e F11. <b>Atenção:</b> 1,6 milhão era a previsão oficial para
+    Lady Gaga; 2,1 milhões é a apuração posterior.</p>
+
+  <div class="fol"><span>O Rio que lotou</span><span>Cultura</span><span>5</span></div>
+</div>
+
+<!-- ============ P6 — NEGÓCIOS + CARNAVAL + FECHO ============ -->
+<div class="pag">
+  <div class="olho">Reportagem · negócios e diplomacia</div>
+  <h2 class="tit" style="font-size:26px">Terno em vez de camiseta</h2>
+  <p class="linha-fina">Sem palco e sem bilheteria, o G20 levou os hotéis cinco estrelas a mais de 95% —
+    e a Rio Innovation Week fez o Centro virar o bairro mais cheio da cidade.</p>
+
+  <p>Novembro de 2024 foi o melhor mês daquele ano: 81,61%. Não havia verão, Carnaval nem Réveillon.
+    Havia a Cúpula do G20. No recorte de 15 a 20 de novembro, a ocupação média da cidade foi de 80,09%,
+    com os hotéis cinco estrelas acima de 95% e Ipanema/Leblon em 90,70%. O Galeão projetou 326 mil
+    passageiros no período, 68% mais que no ano anterior — acima dos picos de Carnaval e de Réveillon.
+    Um encontro diplomático de dois dias bateu as duas maiores festas do calendário carioca em
+    movimentação de passageiros.</p>
+
+  <p>O turismo de negócios tem outra virtude, mais discreta: ele escolhe o mês errado de propósito. O Web
+    Summit Rio acontece em abril ou maio, baixa estação, e em sua primeira edição levou a Barra da Tijuca
+    a 88,42% de ocupação contra 72,25% da média da cidade. A Rio Innovation Week acontece em agosto, no
+    Píer Mauá, e é o único evento de toda a série capaz de puxar o Centro — a região estruturalmente mais
+    fraca da hotelaria — para 90%, cerca de 30% acima da média histórica do bairro. Foram 205 mil pessoas
+    em quatro dias e R$ 149,7 milhões injetados na cidade.</p>
+
+  <p>Há uma lição de política urbana aí. Evento com sede definida redistribui benefício no território:
+    o Rock in Rio e o Web Summit enchem a Barra, o megashow na areia enche Copacabana, a feira de tecnologia
+    enche o Centro. Decidir onde o evento acontece é decidir qual parte da cidade ganha.</p>
+
+  <hr style="border:0;border-top:1px solid #e6e0d3;margin:22px 0">
+
+  <div class="olho">Fecho</div>
+  <h2 class="tit" style="font-size:26px">O Carnaval que lotou tudo</h2>
+
+  <p>Em 2025 o Rio chegou ao limite aritmético: 98,62% de ocupação hoteleira na capital durante o
+    Carnaval, contra 86,92% no ano anterior. Por bairro, quase não sobrou quarto — Centro 99,37%,
+    Leme/Copacabana 99,18%, Flamengo/Botafogo 99,05%, Ipanema/Leblon 98,82%. Mais de oito milhões de
+    pessoas visitaram a cidade e o impacto econômico foi de aproximadamente R$ 6,5 bilhões no estado.
+    Foi o melhor Carnaval em dez anos.</p>
+
+  <p>Fevereiro de 2025 fechou em 85,71% na média mensal da cidade: o melhor fevereiro de toda a série.
+    E aqui a história se fecha sobre si mesma. O Carnaval é evento de calendário permanente — acontece
+    de todo jeito, todo ano. Serve, por isso, como régua: quando um evento pontual chega perto do mês de
+    Carnaval, como o Rock in Rio de 2022 ou o G20 de 2024, é porque aquele evento fez algo excepcional.</p>
+
+  <div class="caixa" style="border-left-color:var(--verde)">
+    <h4 style="color:var(--verde)">A resposta à pergunta da pesquisa</h4>
+    <p>Os principais eventos realizados no Rio de Janeiro entre 2018 e 2025 aparecem, sem exceção, nos
+      meses de maior ocupação hoteleira da série — inclusive em meses que a sazonalidade condenaria ao
+      vazio, como maio e setembro. A hipótese se sustenta.</p>
+    <p>Com duas ressalvas honestas: a curva também sobe por fatores estruturais, como a retomada dos voos
+      internacionais e a redução da oferta de leitos após os fechamentos de 2020; e, acima de 90% de
+      ocupação, o efeito do evento deixa de aparecer no volume e passa a aparecer no preço da diária.</p>
+  </div>
+
+  <p class="fontes-pe"><b>Fontes:</b> PANROTAS com dados HotéisRIO/ABIH-RJ (14 nov. 2024); Ministério do
+    Turismo (nov. 2024); Agência Brasil, "Web Summit Rio deve injetar R$ 1,2 bilhão" (mar. 2023) e
+    "Carnaval de 2025 teve recordes para bares, restaurantes e hotéis do RJ" (10 mar. 2025); Mercado &amp;
+    Eventos com pesquisa HotéisRIO (Rio Innovation Week 2025); Prefeitura do Rio — Casa Civil (BRICS 2025);
+    série mensal HotéisRIO/ABIH-RJ. Fichas F02, F09, F10, F12 e F13.</p>
+
+  <div class="ficha" style="border-top:1px solid #e6e0d3;padding-top:12px;margin-top:18px">
+    <b>EXPEDIENTE</b><br>
+    <b>O Rio que lotou</b> — revista-produto de Trabalho de Conclusão de Curso.
+    Pesquisa, texto, dados e edição: <b>Cristiana da Silva Souza Teixeira</b>.
+    Base de dados: Pesquisa de Ocupação Hoteleira HotéisRIO/ABIH-RJ, consolidada no Observatório da
+    Hotelaria do Rio de Janeiro. Fontes dos eventos verificadas em 16 de setembro de 2026 e arquivadas,
+    com link e citação, na pasta <b>fontes/</b> do repositório do projeto.
+    Entrevistas: professor de Turismo da UFF e Presidente do Sindicato de Hotéis da Cidade do Rio de Janeiro.
+    Edição única · 2026 · uso acadêmico.
+  </div>
+
+  <div class="fol"><span>O Rio que lotou</span><span>Negócios e fecho</span><span>6</span></div>
+</div>
+
+</body>
+</html>

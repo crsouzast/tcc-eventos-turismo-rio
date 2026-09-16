@@ -1,0 +1,565 @@
+regiao;ano;mes;mes_num;ocupacao_pct
+Barra da Tijuca / São Conrado;2018;jan;1;61
+Barra da Tijuca / São Conrado;2018;fev;2;49
+Barra da Tijuca / São Conrado;2018;mar;3;34
+Barra da Tijuca / São Conrado;2018;abr;4;37,67
+Barra da Tijuca / São Conrado;2018;mai;5;33,8
+Barra da Tijuca / São Conrado;2018;jun;6;33,2
+Barra da Tijuca / São Conrado;2018;jul;7;38
+Barra da Tijuca / São Conrado;2018;ago;8;47
+Barra da Tijuca / São Conrado;2018;set;9;48,4
+Barra da Tijuca / São Conrado;2018;out;10;45,8
+Barra da Tijuca / São Conrado;2018;nov;11;49,8
+Barra da Tijuca / São Conrado;2018;dez;12;54,5
+Barra da Tijuca / São Conrado;2019;jan;1;73,2
+Barra da Tijuca / São Conrado;2019;fev;2;56,2
+Barra da Tijuca / São Conrado;2019;mar;3;58,8
+Barra da Tijuca / São Conrado;2019;abr;4;47,6
+Barra da Tijuca / São Conrado;2019;mai;5;45
+Barra da Tijuca / São Conrado;2019;jun;6;43
+Barra da Tijuca / São Conrado;2019;jul;7;46,2
+Barra da Tijuca / São Conrado;2019;ago;8;39,4
+Barra da Tijuca / São Conrado;2019;set;9;51,83
+Barra da Tijuca / São Conrado;2019;out;10;63
+Barra da Tijuca / São Conrado;2019;nov;11;61
+Barra da Tijuca / São Conrado;2019;dez;12;66,4
+Barra da Tijuca / São Conrado;2020;jan;1;82
+Barra da Tijuca / São Conrado;2020;fev;2;62
+Barra da Tijuca / São Conrado;2020;mar;3;53
+Barra da Tijuca / São Conrado;2020;jun;6;18,8
+Barra da Tijuca / São Conrado;2020;jul;7;23,08
+Barra da Tijuca / São Conrado;2020;ago;8;34,8
+Barra da Tijuca / São Conrado;2020;set;9;39
+Barra da Tijuca / São Conrado;2020;out;10;50,2
+Barra da Tijuca / São Conrado;2020;nov;11;48
+Barra da Tijuca / São Conrado;2020;dez;12;51,2
+Barra da Tijuca / São Conrado;2021;jan;1;56,4
+Barra da Tijuca / São Conrado;2021;fev;2;60,75
+Barra da Tijuca / São Conrado;2021;mar;3;47,2
+Barra da Tijuca / São Conrado;2021;abr;4;47,8
+Barra da Tijuca / São Conrado;2021;mai;5;46,68
+Barra da Tijuca / São Conrado;2021;jun;6;58,2
+Barra da Tijuca / São Conrado;2021;jul;7;68,4
+Barra da Tijuca / São Conrado;2021;ago;8;66
+Barra da Tijuca / São Conrado;2021;set;9;56,65
+Barra da Tijuca / São Conrado;2021;out;10;63,78
+Barra da Tijuca / São Conrado;2021;nov;11;61,13
+Barra da Tijuca / São Conrado;2021;dez;12;65,13
+Barra da Tijuca / São Conrado;2022;jan;1;74,1
+Barra da Tijuca / São Conrado;2022;fev;2;65,18
+Barra da Tijuca / São Conrado;2022;mar;3;56,1
+Barra da Tijuca / São Conrado;2022;abr;4;62,83
+Barra da Tijuca / São Conrado;2022;mai;5;48,13
+Barra da Tijuca / São Conrado;2022;jun;6;52,37
+Barra da Tijuca / São Conrado;2022;jul;7;63,5
+Barra da Tijuca / São Conrado;2022;ago;8;63,09
+Barra da Tijuca / São Conrado;2022;set;9;69,54
+Barra da Tijuca / São Conrado;2022;out;10;64,17
+Barra da Tijuca / São Conrado;2022;nov;11;68,92
+Barra da Tijuca / São Conrado;2022;dez;12;68,83
+Barra da Tijuca / São Conrado;2023;jan;1;82,8
+Barra da Tijuca / São Conrado;2023;fev;2;73,9
+Barra da Tijuca / São Conrado;2023;mar;3;69,63
+Barra da Tijuca / São Conrado;2023;abr;4;68,77
+Barra da Tijuca / São Conrado;2023;mai;5;53,75
+Barra da Tijuca / São Conrado;2023;jun;6;53,5
+Barra da Tijuca / São Conrado;2023;jul;7;65,53
+Barra da Tijuca / São Conrado;2023;ago;8;61,42
+Barra da Tijuca / São Conrado;2023;set;9;66,04
+Barra da Tijuca / São Conrado;2023;out;10;68,43
+Barra da Tijuca / São Conrado;2023;nov;11;72,43
+Barra da Tijuca / São Conrado;2023;dez;12;60,51
+Barra da Tijuca / São Conrado;2024;jan;1;75,65
+Barra da Tijuca / São Conrado;2024;fev;2;72,32
+Barra da Tijuca / São Conrado;2024;mar;3;66,86
+Barra da Tijuca / São Conrado;2024;abr;4;54,38
+Barra da Tijuca / São Conrado;2024;mai;5;57,55
+Barra da Tijuca / São Conrado;2024;jun;6;59,45
+Barra da Tijuca / São Conrado;2024;jul;7;64,93
+Barra da Tijuca / São Conrado;2024;ago;8;63,78
+Barra da Tijuca / São Conrado;2024;set;9;69,54
+Barra da Tijuca / São Conrado;2024;out;10;69,96
+Barra da Tijuca / São Conrado;2024;nov;11;73,41
+Barra da Tijuca / São Conrado;2024;dez;12;74,82
+Barra da Tijuca / São Conrado;2025;jan;1;85,61
+Barra da Tijuca / São Conrado;2025;fev;2;83,68
+Barra da Tijuca / São Conrado;2025;mar;3;83,62
+Barra da Tijuca / São Conrado;2025;abr;4;75,33
+Barra da Tijuca / São Conrado;2025;mai;5;67,37
+Barra da Tijuca / São Conrado;2025;jun;6;59,34
+Barra da Tijuca / São Conrado;2025;jul;7;70,6
+Barra da Tijuca / São Conrado;2025;ago;8;66,33
+Barra da Tijuca / São Conrado;2025;set;9;76,44
+Barra da Tijuca / São Conrado;2025;out;10;80,56
+Barra da Tijuca / São Conrado;2025;nov;11;72,66
+Barra da Tijuca / São Conrado;2025;dez;12;74,21
+Centro;2018;jan;1;57
+Centro;2018;fev;2;60
+Centro;2018;mar;3;32
+Centro;2018;abr;4;24,5
+Centro;2018;mai;5;25,8
+Centro;2018;jun;6;28,6
+Centro;2018;jul;7;26
+Centro;2018;ago;8;38,8
+Centro;2018;set;9;36,6
+Centro;2018;out;10;38
+Centro;2018;nov;11;40,6
+Centro;2018;dez;12;52,33
+Centro;2019;jan;1;56,4
+Centro;2019;fev;2;49,6
+Centro;2019;mar;3;59,2
+Centro;2019;abr;4;41,8
+Centro;2019;mai;5;47,4
+Centro;2019;jun;6;39,6
+Centro;2019;jul;7;48,4
+Centro;2019;ago;8;48
+Centro;2019;set;9;52,17
+Centro;2019;out;10;61
+Centro;2019;nov;11;57
+Centro;2019;dez;12;64,8
+Centro;2020;jan;1;55
+Centro;2020;fev;2;65
+Centro;2020;mar;3;39
+Centro;2020;jun;6;46,2
+Centro;2020;jul;7;34,2
+Centro;2020;ago;8;22,6
+Centro;2020;set;9;41,8
+Centro;2020;out;10;42,2
+Centro;2020;nov;11;46,25
+Centro;2020;dez;12;42,8
+Centro;2021;jan;1;42,6
+Centro;2021;fev;2;34
+Centro;2021;mar;3;35,6
+Centro;2021;abr;4;32,2
+Centro;2021;mai;5;33,52
+Centro;2021;jun;6;38,2
+Centro;2021;jul;7;40,4
+Centro;2021;ago;8;42
+Centro;2021;set;9;38,34
+Centro;2021;out;10;55,03
+Centro;2021;nov;11;62,92
+Centro;2021;dez;12;62,11
+Centro;2022;jan;1;71,01
+Centro;2022;fev;2;62,23
+Centro;2022;mar;3;50,92
+Centro;2022;abr;4;49,13
+Centro;2022;mai;5;47,3
+Centro;2022;jun;6;51,32
+Centro;2022;jul;7;56,78
+Centro;2022;ago;8;65,1
+Centro;2022;set;9;72,12
+Centro;2022;out;10;56,76
+Centro;2022;nov;11;64,9
+Centro;2022;dez;12;59,59
+Centro;2023;jan;1;73,67
+Centro;2023;fev;2;68,22
+Centro;2023;mar;3;65,68
+Centro;2023;abr;4;52,23
+Centro;2023;mai;5;55,29
+Centro;2023;jun;6;58,04
+Centro;2023;jul;7;55,01
+Centro;2023;ago;8;68,88
+Centro;2023;set;9;60,86
+Centro;2023;out;10;68,32
+Centro;2023;nov;11;81,63
+Centro;2023;dez;12;60,32
+Centro;2024;jan;1;65,61
+Centro;2024;fev;2;69,27
+Centro;2024;mar;3;55,53
+Centro;2024;abr;4;58,23
+Centro;2024;mai;5;65,06
+Centro;2024;jun;6;59,16
+Centro;2024;jul;7;56,86
+Centro;2024;ago;8;61,81
+Centro;2024;set;9;70,16
+Centro;2024;out;10;73,21
+Centro;2024;nov;11;75,07
+Centro;2024;dez;12;62,07
+Centro;2025;jan;1;69,94
+Centro;2025;fev;2;75,04
+Centro;2025;mar;3;75,56
+Centro;2025;abr;4;67,2
+Centro;2025;mai;5;68,95
+Centro;2025;jun;6;62,71
+Centro;2025;jul;7;60,84
+Centro;2025;ago;8;64,5
+Centro;2025;set;9;70,61
+Centro;2025;out;10;70,14
+Centro;2025;nov;11;71,62
+Centro;2025;dez;12;65,64
+Cidade do Rio;2018;jan;1;72
+Cidade do Rio;2018;fev;2;66,6
+Cidade do Rio;2018;mar;3;48,8
+Cidade do Rio;2018;abr;4;44,5
+Cidade do Rio;2018;mai;5;38
+Cidade do Rio;2018;jun;6;39,4
+Cidade do Rio;2018;jul;7;44
+Cidade do Rio;2018;ago;8;52
+Cidade do Rio;2018;set;9;53
+Cidade do Rio;2018;out;10;56,6
+Cidade do Rio;2018;nov;11;62,4
+Cidade do Rio;2018;dez;12;66,67
+Cidade do Rio;2019;jan;1;79,6
+Cidade do Rio;2019;fev;2;74,2
+Cidade do Rio;2019;mar;3;90,66
+Cidade do Rio;2019;abr;4;55,6
+Cidade do Rio;2019;mai;5;50,2
+Cidade do Rio;2019;jun;6;51,4
+Cidade do Rio;2019;jul;7;56,2
+Cidade do Rio;2019;ago;8;53,4
+Cidade do Rio;2019;set;9;58,83
+Cidade do Rio;2019;out;10;69
+Cidade do Rio;2019;nov;11;65
+Cidade do Rio;2019;dez;12;70,5
+Cidade do Rio;2020;jan;1;76
+Cidade do Rio;2020;fev;2;73
+Cidade do Rio;2020;mar;3;59
+Cidade do Rio;2020;jun;6;22,8
+Cidade do Rio;2020;jul;7;19,78
+Cidade do Rio;2020;ago;8;24,48
+Cidade do Rio;2020;set;9;31,25
+Cidade do Rio;2020;out;10;37,4
+Cidade do Rio;2020;nov;11;49,55
+Cidade do Rio;2020;dez;12;47,36
+Cidade do Rio;2021;jan;1;49,46
+Cidade do Rio;2021;fev;2;44,45
+Cidade do Rio;2021;mar;3;39,11
+Cidade do Rio;2021;abr;4;31,4
+Cidade do Rio;2021;mai;5;37,39
+Cidade do Rio;2021;jun;6;43,89
+Cidade do Rio;2021;jul;7;51,44
+Cidade do Rio;2021;ago;8;51,6
+Cidade do Rio;2021;set;9;50,73
+Cidade do Rio;2021;out;10;57,96
+Cidade do Rio;2021;nov;11;62,29
+Cidade do Rio;2021;dez;12;65,01
+Cidade do Rio;2022;jan;1;73,27
+Cidade do Rio;2022;fev;2;66
+Cidade do Rio;2022;mar;3;61,05
+Cidade do Rio;2022;abr;4;63,68
+Cidade do Rio;2022;mai;5;52,69
+Cidade do Rio;2022;jun;6;52,2
+Cidade do Rio;2022;jul;7;65,03
+Cidade do Rio;2022;ago;8;65,2
+Cidade do Rio;2022;set;9;75,63
+Cidade do Rio;2022;out;10;64,62
+Cidade do Rio;2022;nov;11;70,67
+Cidade do Rio;2022;dez;12;70,01
+Cidade do Rio;2023;jan;1;82,85
+Cidade do Rio;2023;fev;2;76,28
+Cidade do Rio;2023;mar;3;73,59
+Cidade do Rio;2023;abr;4;66,43
+Cidade do Rio;2023;mai;5;60,58
+Cidade do Rio;2023;jun;6;60,9
+Cidade do Rio;2023;jul;7;67,34
+Cidade do Rio;2023;ago;8;71,67
+Cidade do Rio;2023;set;9;69,85
+Cidade do Rio;2023;out;10;74,71
+Cidade do Rio;2023;nov;11;81,98
+Cidade do Rio;2023;dez;12;67,13
+Cidade do Rio;2024;jan;1;70,82
+Cidade do Rio;2024;fev;2;75,6
+Cidade do Rio;2024;mar;3;72,2
+Cidade do Rio;2024;abr;4;67,2
+Cidade do Rio;2024;mai;5;67,89
+Cidade do Rio;2024;jun;6;67,07
+Cidade do Rio;2024;jul;7;70,15
+Cidade do Rio;2024;ago;8;72,5
+Cidade do Rio;2024;set;9;78,25
+Cidade do Rio;2024;out;10;77,78
+Cidade do Rio;2024;nov;11;81,61
+Cidade do Rio;2024;dez;12;76,79
+Cidade do Rio;2025;jan;1;84,41
+Cidade do Rio;2025;fev;2;85,71
+Cidade do Rio;2025;mar;3;84,1
+Cidade do Rio;2025;abr;4;76,75
+Cidade do Rio;2025;mai;5;72,81
+Cidade do Rio;2025;jun;6;66,33
+Cidade do Rio;2025;jul;7;74,13
+Cidade do Rio;2025;ago;8;72,87
+Cidade do Rio;2025;set;9;79,27
+Cidade do Rio;2025;out;10;81,49
+Cidade do Rio;2025;nov;11;78,64
+Cidade do Rio;2025;dez;12;76,21
+Flamengo / Botafogo;2018;jan;1;67
+Flamengo / Botafogo;2018;fev;2;68
+Flamengo / Botafogo;2018;mar;3;44,6
+Flamengo / Botafogo;2018;abr;4;32
+Flamengo / Botafogo;2018;mai;5;41,8
+Flamengo / Botafogo;2018;jun;6;50,2
+Flamengo / Botafogo;2018;jul;7;54
+Flamengo / Botafogo;2018;ago;8;53,6
+Flamengo / Botafogo;2018;set;9;54,6
+Flamengo / Botafogo;2018;out;10;61,2
+Flamengo / Botafogo;2018;nov;11;61,4
+Flamengo / Botafogo;2018;dez;12;79,33
+Flamengo / Botafogo;2019;jan;1;78,4
+Flamengo / Botafogo;2019;fev;2;71
+Flamengo / Botafogo;2019;mar;3;74
+Flamengo / Botafogo;2019;abr;4;55,2
+Flamengo / Botafogo;2019;mai;5;55,8
+Flamengo / Botafogo;2019;jun;6;64
+Flamengo / Botafogo;2019;jul;7;63
+Flamengo / Botafogo;2019;ago;8;56,8
+Flamengo / Botafogo;2019;set;9;65
+Flamengo / Botafogo;2019;out;10;72
+Flamengo / Botafogo;2019;nov;11;66
+Flamengo / Botafogo;2019;dez;12;72
+Flamengo / Botafogo;2020;jan;1;84
+Flamengo / Botafogo;2020;fev;2;79
+Flamengo / Botafogo;2020;mar;3;62
+Flamengo / Botafogo;2020;jun;6;36
+Flamengo / Botafogo;2020;jul;7;23
+Flamengo / Botafogo;2020;ago;8;25,6
+Flamengo / Botafogo;2020;set;9;39,4
+Flamengo / Botafogo;2020;out;10;51,6
+Flamengo / Botafogo;2020;nov;11;51,5
+Flamengo / Botafogo;2020;dez;12;52,2
+Flamengo / Botafogo;2021;jan;1;54
+Flamengo / Botafogo;2021;fev;2;51,75
+Flamengo / Botafogo;2021;mar;3;56,6
+Flamengo / Botafogo;2021;abr;4;38,8
+Flamengo / Botafogo;2021;mai;5;29,71
+Flamengo / Botafogo;2021;jun;6;36,2
+Flamengo / Botafogo;2021;jul;7;39
+Flamengo / Botafogo;2021;ago;8;43
+Flamengo / Botafogo;2021;set;9;61,49
+Flamengo / Botafogo;2021;out;10;49,98
+Flamengo / Botafogo;2021;nov;11;63,31
+Flamengo / Botafogo;2021;dez;12;64,02
+Flamengo / Botafogo;2022;jan;1;74,56
+Flamengo / Botafogo;2022;fev;2;65,24
+Flamengo / Botafogo;2022;mar;3;59,42
+Flamengo / Botafogo;2022;abr;4;65,07
+Flamengo / Botafogo;2022;mai;5;59,97
+Flamengo / Botafogo;2022;jun;6;52,81
+Flamengo / Botafogo;2022;jul;7;69,7
+Flamengo / Botafogo;2022;ago;8;69,74
+Flamengo / Botafogo;2022;set;9;81,54
+Flamengo / Botafogo;2022;out;10;67,64
+Flamengo / Botafogo;2022;nov;11;71,83
+Flamengo / Botafogo;2022;dez;12;66,15
+Flamengo / Botafogo;2023;jan;1;83,98
+Flamengo / Botafogo;2023;fev;2;83,22
+Flamengo / Botafogo;2023;mar;3;72,92
+Flamengo / Botafogo;2023;abr;4;65,09
+Flamengo / Botafogo;2023;mai;5;61,53
+Flamengo / Botafogo;2023;jun;6;61,96
+Flamengo / Botafogo;2023;jul;7;62,93
+Flamengo / Botafogo;2023;ago;8;74,67
+Flamengo / Botafogo;2023;set;9;70,64
+Flamengo / Botafogo;2023;out;10;77,44
+Flamengo / Botafogo;2023;nov;11;85,66
+Flamengo / Botafogo;2023;dez;12;66,86
+Flamengo / Botafogo;2024;jan;1;63,64
+Flamengo / Botafogo;2024;fev;2;72,21
+Flamengo / Botafogo;2024;mar;3;66,63
+Flamengo / Botafogo;2024;abr;4;57,37
+Flamengo / Botafogo;2024;mai;5;68,3
+Flamengo / Botafogo;2024;jun;6;73,44
+Flamengo / Botafogo;2024;jul;7;71,92
+Flamengo / Botafogo;2024;ago;8;75,89
+Flamengo / Botafogo;2024;set;9;81,16
+Flamengo / Botafogo;2024;out;10;79,03
+Flamengo / Botafogo;2024;nov;11;79,88
+Flamengo / Botafogo;2024;dez;12;72,2
+Flamengo / Botafogo;2025;jan;1;81,58
+Flamengo / Botafogo;2025;fev;2;84,1
+Flamengo / Botafogo;2025;mar;3;81,88
+Flamengo / Botafogo;2025;abr;4;71,16
+Flamengo / Botafogo;2025;mai;5;73,96
+Flamengo / Botafogo;2025;jun;6;70,53
+Flamengo / Botafogo;2025;jul;7;77,91
+Flamengo / Botafogo;2025;ago;8;72,66
+Flamengo / Botafogo;2025;set;9;79,33
+Flamengo / Botafogo;2025;out;10;77,27
+Flamengo / Botafogo;2025;nov;11;80,72
+Flamengo / Botafogo;2025;dez;12;68,93
+Ipanema / Leblon;2018;jan;1;78
+Ipanema / Leblon;2018;fev;2;71
+Ipanema / Leblon;2018;mar;3;67,2
+Ipanema / Leblon;2018;abr;4;63
+Ipanema / Leblon;2018;mai;5;49,4
+Ipanema / Leblon;2018;jun;6;50,8
+Ipanema / Leblon;2018;jul;7;56
+Ipanema / Leblon;2018;ago;8;69,2
+Ipanema / Leblon;2018;set;9;70
+Ipanema / Leblon;2018;out;10;70,6
+Ipanema / Leblon;2018;nov;11;78,8
+Ipanema / Leblon;2018;dez;12;79,5
+Ipanema / Leblon;2019;jan;1;79,6
+Ipanema / Leblon;2019;fev;2;76,4
+Ipanema / Leblon;2019;mar;3;80
+Ipanema / Leblon;2019;abr;4;68,6
+Ipanema / Leblon;2019;mai;5;62,8
+Ipanema / Leblon;2019;jun;6;66,6
+Ipanema / Leblon;2019;jul;7;61
+Ipanema / Leblon;2019;ago;8;75,8
+Ipanema / Leblon;2019;set;9;69,5
+Ipanema / Leblon;2019;out;10;74
+Ipanema / Leblon;2019;nov;11;68
+Ipanema / Leblon;2019;dez;12;77,2
+Ipanema / Leblon;2020;jan;1;85
+Ipanema / Leblon;2020;fev;2;79
+Ipanema / Leblon;2020;mar;3;73
+Ipanema / Leblon;2020;jun;6;3,6
+Ipanema / Leblon;2020;jul;7;18,8
+Ipanema / Leblon;2020;ago;8;28,8
+Ipanema / Leblon;2020;set;9;35,2
+Ipanema / Leblon;2020;out;10;45
+Ipanema / Leblon;2020;nov;11;53,5
+Ipanema / Leblon;2020;dez;12;50,4
+Ipanema / Leblon;2021;jan;1;56,2
+Ipanema / Leblon;2021;fev;2;54,25
+Ipanema / Leblon;2021;mar;3;36
+Ipanema / Leblon;2021;abr;4;22,8
+Ipanema / Leblon;2021;mai;5;41,55
+Ipanema / Leblon;2021;jun;6;52,6
+Ipanema / Leblon;2021;jul;7;67
+Ipanema / Leblon;2021;ago;8;62
+Ipanema / Leblon;2021;set;9;60,48
+Ipanema / Leblon;2021;out;10;60,4
+Ipanema / Leblon;2021;nov;11;62,56
+Ipanema / Leblon;2021;dez;12;72,4
+Ipanema / Leblon;2022;jan;1;79,75
+Ipanema / Leblon;2022;fev;2;66,34
+Ipanema / Leblon;2022;mar;3;71,93
+Ipanema / Leblon;2022;abr;4;67,64
+Ipanema / Leblon;2022;mai;5;56,24
+Ipanema / Leblon;2022;jun;6;51,54
+Ipanema / Leblon;2022;jul;7;80,11
+Ipanema / Leblon;2022;ago;8;72,27
+Ipanema / Leblon;2022;set;9;78,64
+Ipanema / Leblon;2022;out;10;76,94
+Ipanema / Leblon;2022;nov;11;83,69
+Ipanema / Leblon;2022;dez;12;78,04
+Ipanema / Leblon;2023;jan;1;84,85
+Ipanema / Leblon;2023;fev;2;79,91
+Ipanema / Leblon;2023;mar;3;80,94
+Ipanema / Leblon;2023;abr;4;76,63
+Ipanema / Leblon;2023;mai;5;68,77
+Ipanema / Leblon;2023;jun;6;64,08
+Ipanema / Leblon;2023;jul;7;71,65
+Ipanema / Leblon;2023;ago;8;79,03
+Ipanema / Leblon;2023;set;9;75,99
+Ipanema / Leblon;2023;out;10;78,84
+Ipanema / Leblon;2023;nov;11;81,4
+Ipanema / Leblon;2023;dez;12;76,59
+Ipanema / Leblon;2024;jan;1;76,45
+Ipanema / Leblon;2024;fev;2;80,75
+Ipanema / Leblon;2024;mar;3;80,19
+Ipanema / Leblon;2024;abr;4;76,81
+Ipanema / Leblon;2024;mai;5;72,82
+Ipanema / Leblon;2024;jun;6;73,88
+Ipanema / Leblon;2024;jul;7;75,44
+Ipanema / Leblon;2024;ago;8;74,68
+Ipanema / Leblon;2024;set;9;79,89
+Ipanema / Leblon;2024;out;10;77,8
+Ipanema / Leblon;2024;nov;11;84,07
+Ipanema / Leblon;2024;dez;12;84,44
+Ipanema / Leblon;2025;jan;1;85,77
+Ipanema / Leblon;2025;fev;2;86,37
+Ipanema / Leblon;2025;mar;3;87,58
+Ipanema / Leblon;2025;abr;4;78,78
+Ipanema / Leblon;2025;mai;5;75,97
+Ipanema / Leblon;2025;jun;6;66,96
+Ipanema / Leblon;2025;jul;7;80,57
+Ipanema / Leblon;2025;ago;8;80,14
+Ipanema / Leblon;2025;set;9;78,29
+Ipanema / Leblon;2025;out;10;86,7
+Ipanema / Leblon;2025;nov;11;83,13
+Ipanema / Leblon;2025;dez;12;83,12
+Leme / Copacabana;2018;jan;1;84
+Leme / Copacabana;2018;fev;2;74
+Leme / Copacabana;2018;mar;3;66
+Leme / Copacabana;2018;abr;4;52,5
+Leme / Copacabana;2018;mai;5;41,2
+Leme / Copacabana;2018;jun;6;42,4
+Leme / Copacabana;2018;jul;7;49
+Leme / Copacabana;2018;ago;8;56,2
+Leme / Copacabana;2018;set;9;59
+Leme / Copacabana;2018;out;10;66
+Leme / Copacabana;2018;nov;11;75
+Leme / Copacabana;2018;dez;12;74,33
+Leme / Copacabana;2019;jan;1;80,6
+Leme / Copacabana;2019;fev;2;75,2
+Leme / Copacabana;2019;mar;3;80,2
+Leme / Copacabana;2019;abr;4;63
+Leme / Copacabana;2019;mai;5;51,2
+Leme / Copacabana;2019;jun;6;54,4
+Leme / Copacabana;2019;jul;7;62,2
+Leme / Copacabana;2019;ago;8;58,2
+Leme / Copacabana;2019;set;9;60,83
+Leme / Copacabana;2019;out;10;74
+Leme / Copacabana;2019;nov;11;72
+Leme / Copacabana;2019;dez;12;72,2
+Leme / Copacabana;2020;jan;1;75
+Leme / Copacabana;2020;fev;2;80
+Leme / Copacabana;2020;mar;3;69
+Leme / Copacabana;2020;jun;6;9,4
+Leme / Copacabana;2020;jul;7;9,2
+Leme / Copacabana;2020;ago;8;15,2
+Leme / Copacabana;2020;set;9;19,2
+Leme / Copacabana;2020;out;10;25,4
+Leme / Copacabana;2020;nov;11;48,5
+Leme / Copacabana;2020;dez;12;37,6
+Leme / Copacabana;2021;jan;1;38,2
+Leme / Copacabana;2021;fev;2;35,25
+Leme / Copacabana;2021;mar;3;20,8
+Leme / Copacabana;2021;abr;4;15,2
+Leme / Copacabana;2021;mai;5;27,21
+Leme / Copacabana;2021;jun;6;32,2
+Leme / Copacabana;2021;jul;7;42,4
+Leme / Copacabana;2021;ago;8;45
+Leme / Copacabana;2021;set;9;48,32
+Leme / Copacabana;2021;out;10;57,04
+Leme / Copacabana;2021;nov;11;61,55
+Leme / Copacabana;2021;dez;12;61,39
+Leme / Copacabana;2022;jan;1;71,63
+Leme / Copacabana;2022;fev;2;68,45
+Leme / Copacabana;2022;mar;3;65,87
+Leme / Copacabana;2022;abr;4;64,87
+Leme / Copacabana;2022;mai;5;54,51
+Leme / Copacabana;2022;jun;6;52,25
+Leme / Copacabana;2022;jul;7;70,86
+Leme / Copacabana;2022;ago;8;67,44
+Leme / Copacabana;2022;set;9;82,82
+Leme / Copacabana;2022;out;10;66,38
+Leme / Copacabana;2022;nov;11;74,06
+Leme / Copacabana;2022;dez;12;76,95
+Leme / Copacabana;2023;jan;1;83,45
+Leme / Copacabana;2023;fev;2;84,24
+Leme / Copacabana;2023;mar;3;85,27
+Leme / Copacabana;2023;abr;4;76,41
+Leme / Copacabana;2023;mai;5;68,11
+Leme / Copacabana;2023;jun;6;66,29
+Leme / Copacabana;2023;jul;7;77,42
+Leme / Copacabana;2023;ago;8;79,29
+Leme / Copacabana;2023;set;9;78,01
+Leme / Copacabana;2023;out;10;80,54
+Leme / Copacabana;2023;nov;11;86,63
+Leme / Copacabana;2023;dez;12;75,7
+Leme / Copacabana;2024;jan;1;72,45
+Leme / Copacabana;2024;fev;2;80,99
+Leme / Copacabana;2024;mar;3;83,58
+Leme / Copacabana;2024;abr;4;77,77
+Leme / Copacabana;2024;mai;5;74,62
+Leme / Copacabana;2024;jun;6;74,73
+Leme / Copacabana;2024;jul;7;79,48
+Leme / Copacabana;2024;ago;8;83,78
+Leme / Copacabana;2024;set;9;86,92
+Leme / Copacabana;2024;out;10;86,07
+Leme / Copacabana;2024;nov;11;90,49
+Leme / Copacabana;2024;dez;12;83,37
+Leme / Copacabana;2025;jan;1;91,32
+Leme / Copacabana;2025;fev;2;92,8
+Leme / Copacabana;2025;mar;3;92,47
+Leme / Copacabana;2025;abr;4;84,39
+Leme / Copacabana;2025;mai;5;81,24
+Leme / Copacabana;2025;jun;6;75,59
+Leme / Copacabana;2025;jul;7;85,89
+Leme / Copacabana;2025;ago;8;86,47
+Leme / Copacabana;2025;set;9;85,98
+Leme / Copacabana;2025;out;10;89,34
+Leme / Copacabana;2025;nov;11;89,5
+Leme / Copacabana;2025;dez;12;86,24

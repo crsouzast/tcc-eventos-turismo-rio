@@ -1,0 +1,849 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eventos e ocupação hoteleira no Rio de Janeiro · 2018–2025</title>
+<style>
+  :root{
+    --bg:#0d1117; --panel:#151b23; --panel2:#1b232d; --line:#2a3541;
+    --ink:#e7edf4; --ink2:#a9b6c5; --ink3:#6e7f91;
+    --azul:#2e6fd9; --azul-cl:#7fb0ff; --verde:#1f9d72; --amar:#d8a017;
+    --vermelho:#d9534f; --roxo:#8b5cf6; --areia:#e3c77b;
+    --max:1180px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:15px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--max);margin:0 auto;padding-block:0;padding-left:20px;padding-right:20px}
+  a{color:var(--azul-cl)}
+
+  /* ---------- cabeçalho ---------- */
+  header.hero{border-bottom:1px solid var(--line);
+    background:linear-gradient(160deg,#101826 0%,#0d1117 60%)}
+  .hero .wrap{padding-block:44px 34px}
+  .selo{display:inline-block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--areia);border:1px solid #4a4025;background:#231f13;padding:5px 10px;border-radius:3px}
+  h1{font-size:clamp(23px,3.4vw,38px);line-height:1.2;margin:16px 0 10px;font-weight:650;letter-spacing:-.4px}
+  h1 em{font-style:normal;color:var(--azul-cl)}
+  .sub{color:var(--ink2);max-width:74ch;font-size:16px}
+  .autoria{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px 26px;font-size:13px;color:var(--ink3)}
+  .autoria b{color:var(--ink2);font-weight:600}
+
+  /* ---------- navegação ---------- */
+  nav.tabs{position:sticky;top:0;z-index:20;background:rgba(13,17,23,.94);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav.tabs .wrap{display:flex;gap:2px;overflow-x:auto;padding-block:0}
+  nav.tabs button{background:none;border:0;border-bottom:2px solid transparent;color:var(--ink3);
+    font:inherit;font-size:13.5px;padding:14px 13px;cursor:pointer;white-space:nowrap}
+  nav.tabs button:hover{color:var(--ink)}
+  nav.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--azul)}
+
+  section.page{display:none;padding-block:34px 60px}
+  section.page.on{display:block}
+
+  h2{font-size:21px;margin:0 0 6px;letter-spacing:-.2px}
+  h3{font-size:16px;margin:30px 0 8px}
+  .lead{color:var(--ink2);margin:0 0 24px;max-width:82ch}
+  .nota{font-size:12.5px;color:var(--ink3);margin-top:10px}
+
+  /* ---------- cards de indicador ---------- */
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:12px;margin:0 0 28px}
+  .kpi{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:15px 16px}
+  .kpi .rot{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3)}
+  .kpi .num{font-size:27px;font-weight:650;margin:6px 0 2px;letter-spacing:-.8px;font-variant-numeric:tabular-nums}
+  .kpi .pe{font-size:12.5px;color:var(--ink2)}
+  .kpi.up .num{color:var(--verde)} .kpi.down .num{color:var(--vermelho)}
+  .kpi.hi .num{color:var(--azul-cl)}
+
+  /* ---------- painéis ---------- */
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px;margin:0 0 20px}
+  .card > h3{margin-top:0}
+  .card .cap{font-size:12.5px;color:var(--ink3);margin:0 0 16px}
+  .chartbox{overflow-x:auto}
+  svg{display:block;max-width:100%;height:auto}
+  svg text{font-family:inherit}
+
+  .legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:12.5px;color:var(--ink2);margin-top:14px}
+  .legend i{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+
+  /* ---------- tabelas ---------- */
+  .tabela{overflow-x:auto;border:1px solid var(--line);border-radius:8px}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:560px}
+  th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line)}
+  th{background:var(--panel2);font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;
+    color:var(--ink3);font-weight:600;position:sticky;top:0}
+  td.n{text-align:right;font-variant-numeric:tabular-nums}
+  tbody tr:hover{background:#1a222c}
+  tr.destaque td{background:#16251f}
+
+  /* ---------- timeline de eventos ---------- */
+  .filtros{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 22px}
+  .filtros button{background:var(--panel);border:1px solid var(--line);color:var(--ink2);
+    font:inherit;font-size:12.5px;padding:6px 12px;border-radius:20px;cursor:pointer}
+  .filtros button[aria-pressed="true"]{background:#1d3câ;background:#1c2f4d;border-color:#2e5da8;color:#cfe0ff}
+  .evgrid{display:grid;gap:14px}
+  .ev{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--azul);
+    border-radius:8px;padding:17px 19px}
+  .ev.t-cultural{border-left-color:var(--roxo)}
+  .ev.t-negocios{border-left-color:var(--verde)}
+  .ev.t-institucional{border-left-color:var(--areia)}
+  .ev.t-festivo{border-left-color:var(--amar)}
+  .ev.t-esportivo{border-left-color:var(--azul-cl)}
+  .ev.t-ruptura{border-left-color:var(--vermelho)}
+  .ev .top{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;margin-bottom:8px}
+  .ev .data{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);
+    font-variant-numeric:tabular-nums}
+  .ev .tag{font-size:11px;padding:2px 8px;border-radius:12px;background:var(--panel2);
+    border:1px solid var(--line);color:var(--ink2)}
+  .ev h4{margin:0;font-size:17px;flex:1 1 100%;letter-spacing:-.2px}
+  .ev dl{display:grid;grid-template-columns:auto 1fr;gap:5px 14px;margin:12px 0 0;font-size:13.5px}
+  .ev dt{color:var(--ink3);font-size:12px;letter-spacing:.05em;text-transform:uppercase;padding-top:3px}
+  .ev dd{margin:0;color:var(--ink)}
+  .ev .obs{margin:13px 0 0;font-size:13.5px;color:var(--ink2);border-top:1px dashed var(--line);padding-top:11px}
+  .ev .fonte{margin-top:9px;font-size:12px;color:var(--ink3)}
+
+  ul.lst{padding-left:20px;color:var(--ink2)} ul.lst li{margin:7px 0}
+  blockquote{margin:14px 0;padding:12px 16px;border-left:3px solid var(--azul);
+    background:var(--panel2);border-radius:0 6px 6px 0;color:var(--ink);font-size:14px}
+  blockquote cite{display:block;margin-top:7px;font-style:normal;font-size:12px;color:var(--ink3)}
+  .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+  code{background:var(--panel2);padding:1px 6px;border-radius:4px;font-size:12.5px}
+  footer{border-top:1px solid var(--line);color:var(--ink3);font-size:12.5px}
+  footer .wrap{padding-block:24px 40px}
+  .pill{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;
+    background:#1c2f4d;color:#cfe0ff;border:1px solid #2e5da8}
+  @media(max-width:560px){ .hero .wrap{padding-block:30px 24px} .ev dl{grid-template-columns:1fr} .ev dt{padding-top:8px} }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="selo">Dashboard de pesquisa · TCC</span>
+    <h1>Principais eventos que fomentaram o turismo no Rio de Janeiro entre 2018 e 2025:<br>
+      <em>uma análise da ocupação hoteleira e dos impactos na cidade</em></h1>
+    <p class="sub">Cruzamento entre a série histórica de ocupação hoteleira da cidade do Rio de Janeiro
+      e o calendário de grandes eventos, com foco no recorte 2023–2025 do Observatório da Hotelaria.
+      Todas as informações vêm de fontes oficiais, com resumo, link e citação arquivados na pasta <code>fontes/</code>.</p>
+    <div class="autoria">
+      <span><b>Autora:</b> Cristiana da Silva Souza Teixeira</span>
+      <span><b>Objeto:</b> eventos turísticos de grande porte, 2018–2025</span>
+      <span><b>Sujeito:</b> professor de Turismo (UFF) · Presidente do Sindicato de Hotéis do Rio</span>
+      <span><b>Consulta das fontes:</b> 16/09/2026</span>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs">
+  <div class="wrap" role="tablist">
+    <button role="tab" aria-selected="true" data-p="p1">Panorama</button>
+    <button role="tab" aria-selected="false" data-p="p2">Série histórica</button>
+    <button role="tab" aria-selected="false" data-p="p3">Recorte 2023–2025</button>
+    <button role="tab" aria-selected="false" data-p="p4">Eventos</button>
+    <button role="tab" aria-selected="false" data-p="p5">Cruzamento pico × evento</button>
+    <button role="tab" aria-selected="false" data-p="p6">Regiões</button>
+    <button role="tab" aria-selected="false" data-p="p7">Metodologia</button>
+    <button role="tab" aria-selected="false" data-p="p8">Fontes</button>
+    <button role="tab" aria-selected="false" data-p="p10">Rastreio de agenda</button>
+    <button role="tab" aria-selected="false" data-p="p9">Entrevista e revista</button>
+  </div>
+</nav>
+
+<!-- ============ 1. PANORAMA ============ -->
+<section class="page on" id="p1"><div class="wrap">
+  <h2>O que a série mostra</h2>
+  <p class="lead">Oito anos, 94 medições mensais, cinco regiões. A ocupação hoteleira da cidade do Rio
+    caiu ao fundo em 2020 e subiu de forma contínua desde então, até bater o melhor ano de toda a série
+    em 2025. O que separa um ano do outro, mês a mês, é quase sempre um evento.</p>
+
+  <div class="kpis" id="kpis"></div>
+
+  <div class="card">
+    <h3>Média anual de ocupação da cidade do Rio de Janeiro</h3>
+    <p class="cap">Média das medições mensais de cada ano. Fonte: Pesquisa de Ocupação Hoteleira HotéisRIO/ABIH-RJ.</p>
+    <div class="chartbox" id="c-anual"></div>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <h3>A hipótese, em três comparações</h3>
+      <ul class="lst">
+        <li><b>Setembro de 2018: 53,00%</b> → <b>setembro de 2022: 75,63%</b>. Rock in Rio faz um mês
+          comum superar o verão carioca.</li>
+        <li><b>Maio de 2018: 38,00%</b> → <b>maio de 2025: 72,81%</b>. O vale histórico do calendário
+          virou alta estação à base de megashow gratuito na orla.</li>
+        <li><b>Janeiro de 2021: 49,46%</b> (Réveillon cancelado) → <b>janeiro de 2025: 84,41%</b>.
+          O contrafactual mais limpo que a série oferece.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>O que este dashboard responde</h3>
+      <p class="cap" style="margin-bottom:12px">Problema declarado nas Diretrizes da Pesquisa:</p>
+      <blockquote>De que forma os principais eventos realizados no Rio de Janeiro entre 2018 e 2025
+        impactaram a ocupação hoteleira e contribuíram para o desenvolvimento do turismo na cidade?</blockquote>
+      <p style="color:var(--ink2);font-size:14px;margin-bottom:0">A resposta é montada em três passos, nas
+        abas seguintes: primeiro os picos da série, depois o calendário de eventos, por fim o cruzamento
+        entre os dois — que é exatamente a metodologia descrita no seu projeto.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- ============ 2. SÉRIE HISTÓRICA ============ -->
+<section class="page" id="p2"><div class="wrap">
+  <h2>Série mensal contínua, 2018–2025</h2>
+  <p class="lead">Cada ponto é um mês. As marcas coloridas sobre a linha são os eventos documentados na
+    pasta de fontes. Passe o mouse (ou toque) sobre um ponto para ver mês, ano e taxa.</p>
+
+  <div class="card">
+    <h3>Ocupação mensal da cidade do Rio · janeiro/2018 a dezembro/2025</h3>
+    <p class="cap">A faixa vermelha marca a interrupção da pesquisa em abril e maio de 2020, no auge
+      da paralisação da atividade. A lacuna é, ela própria, um dado.</p>
+    <div class="chartbox" id="c-serie"></div>
+    <div class="legend">
+      <span><i style="background:var(--roxo)"></i>Cultural / música</span>
+      <span><i style="background:var(--verde)"></i>Negócios / tecnologia</span>
+      <span><i style="background:var(--areia)"></i>Institucional</span>
+      <span><i style="background:var(--amar)"></i>Festivo (Carnaval/Réveillon)</span>
+      <span><i style="background:var(--azul-cl)"></i>Esportivo</span>
+      <span><i style="background:var(--vermelho)"></i>Ruptura (pandemia)</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Tabela da série — cidade do Rio (%)</h3>
+    <p class="cap">Mês a mês, ano a ano. Em verde, o melhor mês de cada ano.</p>
+    <div class="tabela" id="t-serie"></div>
+    <p class="nota">Nota de consistência: o valor de março de 2019 (90,66%) está muito acima de todas as
+      regiões no mesmo mês (que variam de 58,80% a 80,20%) e não corresponde a nenhum evento de grande
+      porte identificado. É provável erro de digitação na base histórica. Trate-o como suspeito e confirme
+      na planilha original antes de citar.</p>
+  </div>
+</div></section>
+
+<!-- ============ 3. RECORTE 2023-2025 ============ -->
+<section class="page" id="p3"><div class="wrap">
+  <h2>Recorte 2023–2025 <span class="pill">Observatório da Hotelaria</span></h2>
+  <p class="lead">Este é o período coberto pelo Observatório da Hotelaria do Rio de Janeiro publicado pelo
+    SindHotéisRJ — e, de 2024 em diante, o período em que a própria autora conduz a Pesquisa de Ocupação.
+    É aqui que o dado é mais forte: coleta recente, metodologia conhecida e autoria direta.</p>
+
+  <div class="card">
+    <h3>Ocupação mensal comparada · 2023, 2024 e 2025</h3>
+    <p class="cap">Três curvas sobrepostas no calendário. Onde uma se descola das outras, houve evento.</p>
+    <div class="chartbox" id="c-tres"></div>
+    <div class="legend">
+      <span><i style="background:#6e7f91"></i>2023 — média 71,11%</span>
+      <span><i style="background:var(--azul-cl)"></i>2024 — média 73,15%</span>
+      <span><i style="background:var(--verde)"></i>2025 — média 77,73%</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Os eventos que explicam os descolamentos</h3>
+    <div class="tabela">
+      <table>
+        <thead><tr><th>Mês</th><th>Evento</th><th class="n">Ocupação</th><th>Leitura</th></tr></thead>
+        <tbody>
+          <tr><td>nov/2023</td><td>Taylor Swift + RBD + RHCP + final da Libertadores</td><td class="n">81,98%</td><td>Pico de novembro em toda a série até então. Acúmulo de eventos no mesmo mês.</td></tr>
+          <tr><td>mai/2023</td><td>Web Summit Rio, 1ª edição</td><td class="n">60,58%</td><td>Barra da Tijuca a 88,42% contra 72,25% da cidade no período: o efeito é local, não difuso.</td></tr>
+          <tr><td>mai/2024</td><td>Madonna em Copacabana</td><td class="n">67,89%</td><td>Maio supera abril e junho — inversão da sazonalidade clássica.</td></tr>
+          <tr><td>set/2024</td><td>Rock in Rio, 40 anos</td><td class="n">78,25%</td><td>88% na cidade nos fins de semana do festival; acima de 90% em Ipanema e Leblon.</td></tr>
+          <tr class="destaque"><td>nov/2024</td><td>Cúpula do G20</td><td class="n">81,61%</td><td>Pico de 2024. Cinco estrelas acima de 95% e Galeão com 68% mais passageiros que em 2023.</td></tr>
+          <tr class="destaque"><td>fev/2025</td><td>Carnaval 2025</td><td class="n">85,71%</td><td>98,62% de ocupação no período da folia — recorde histórico da capital.</td></tr>
+          <tr><td>mai/2025</td><td>Lady Gaga em Copacabana</td><td class="n">72,81%</td><td>Acima de 95% em Copacabana no fim de semana do show; 4,9 pontos acima de maio/2024.</td></tr>
+          <tr><td>ago/2025</td><td>Rio Innovation Week, 5ª edição</td><td class="n">72,87%</td><td>Único evento da série que leva o Centro a 90% — cerca de 30% acima da média do bairro.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="nota">Ocupação = média mensal da cidade na série HotéisRIO/ABIH-RJ. Os percentuais citados na
+      coluna de leitura referem-se ao recorte fino do evento (dias ou semana), apurado nas pesquisas específicas.</p>
+  </div>
+</div></section>
+
+<!-- ============ 4. EVENTOS ============ -->
+<section class="page" id="p4"><div class="wrap">
+  <h2>Calendário de eventos documentados</h2>
+  <p class="lead">Dezenove entradas entre 2018 e 2025, cada uma com público, ocupação, impacto econômico
+    e a ficha de fonte correspondente na pasta <code>fontes/</code>.</p>
+  <div class="filtros" id="filtros"></div>
+  <div class="evgrid" id="evgrid"></div>
+</div></section>
+
+<!-- ============ 5. CRUZAMENTO ============ -->
+<section class="page" id="p5"><div class="wrap">
+  <h2>Cruzamento pico × evento</h2>
+  <p class="lead">O passo central da metodologia declarada no projeto: identificar os meses de maior
+    ocupação da série e verificar se neles houve evento relevante. Abaixo, os vinte meses mais ocupados
+    de 2018 a 2025, em ordem.</p>
+
+  <div class="card">
+    <h3>Os 20 meses de maior ocupação da série</h3>
+    <p class="cap">Verde = há evento de grande porte documentado no mês. Cinza = pico de sazonalidade
+      (verão, Réveillon, Carnaval) sem evento captado extraordinário.</p>
+    <div class="tabela" id="t-ranking"></div>
+  </div>
+
+  <div class="card">
+    <h3>Como ler esse resultado sem exagerar na conclusão</h3>
+    <p style="color:var(--ink2);margin-top:0">O ranking mostra que os meses de topo se concentram em
+      2025 e em novembro — e novembro não é mês de verão nem de Carnaval. Isso é um indício forte a favor
+      da hipótese. Mas três cuidados são obrigatórios no texto do TCC:</p>
+    <ul class="lst">
+      <li><b>Correlação não é causalidade.</b> A série mostra coincidência entre evento e pico; a
+        atribuição de causa precisa da entrevista com especialistas e dos estudos de impacto, não do gráfico.</li>
+      <li><b>Há tendência de fundo.</b> A ocupação sobe todos os anos desde 2021, mesmo em meses sem evento:
+        recuperação pós-pandemia, retomada de voos internacionais e redução da oferta hoteleira (hotéis que
+        fecharam em 2020 e não reabriram) também empurram a taxa para cima.</li>
+      <li><b>Teto estatístico.</b> Quando a ocupação passa de 90%, o impacto extra do evento deixa de
+        aparecer em volume e passa a aparecer em preço da diária. Para esses casos, a ocupação subestima o efeito.</li>
+    </ul>
+  </div>
+</div></section>
+
+<!-- ============ 6. REGIÕES ============ -->
+<section class="page" id="p6"><div class="wrap">
+  <h2>Onde o impacto acontece</h2>
+  <p class="lead">Evento com sede definida redistribui benefício no território: o Rock in Rio puxa a Barra,
+    o megashow na orla puxa Copacabana, a Rio Innovation Week puxa o Centro. É o achado que liga a pesquisa
+    diretamente à pauta de política pública.</p>
+
+  <div class="card">
+    <h3>Mapa de calor — média anual por região (%)</h3>
+    <p class="cap">Quanto mais claro, maior a ocupação. A linha do Centro é a mais reveladora do recorte.</p>
+    <div class="chartbox" id="c-heat"></div>
+  </div>
+
+  <div class="card">
+    <h3>A virada do Centro</h3>
+    <p style="color:var(--ink2);margin-top:0">O Centro é a região estruturalmente mais fraca da hotelaria
+      carioca: começa a série com 26,00% em julho de 2018 e chega a 22,60% em agosto de 2020. Em 2025 opera
+      na faixa de 60% a 75%, e no Carnaval daquele ano lidera a cidade com 99,37%. Dois vetores explicam
+      isso, e os dois são eventos: as grandes convenções no Píer Mauá, na Zona Portuária, e a mudança do
+      perfil da folia, que passou a ocupar o Centro de forma massiva.</p>
+    <div class="chartbox" id="c-centro"></div>
+  </div>
+</div></section>
+
+<!-- ============ 7. METODOLOGIA ============ -->
+<section class="page" id="p7"><div class="wrap">
+  <h2>Metodologia e limites</h2>
+  <p class="lead">Escrito para ser reaproveitado na seção de metodologia do TCC, com as ressalvas que a
+    banca provavelmente vai perguntar.</p>
+
+  <div class="card">
+    <h3>Desenho da pesquisa</h3>
+    <ul class="lst">
+      <li><b>Variável de interesse:</b> taxa de ocupação hoteleira mensal da cidade do Rio de Janeiro,
+        total e por região, de janeiro de 2018 a dezembro de 2025.</li>
+      <li><b>Fonte primária:</b> Pesquisa de Ocupação Hoteleira do HotéisRIO/ABIH-RJ, consolidada no
+        Observatório da Hotelaria do Rio de Janeiro. Mesma metodologia ao longo de todo o recorte, o que
+        permite comparação intertemporal legítima.</li>
+      <li><b>Procedimento:</b> (1) ordenar a série e identificar os meses de maior e de menor ocupação;
+        (2) levantar, em fontes oficiais, os eventos de grande porte realizados nesses meses; (3) cruzar
+        os dois conjuntos; (4) comparar o mesmo mês do calendário entre anos diferentes, para separar
+        efeito de evento de efeito de sazonalidade; (5) complementar com estudos de impacto econômico
+        governamentais e com entrevistas.</li>
+      <li><b>Unidade de corte:</b> considerou-se evento de grande porte aquele com público superior a
+        100 mil pessoas, ou com balanço oficial de impacto econômico divulgado, ou com pesquisa de
+        ocupação específica realizada pela entidade do setor.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Limites declarados — e por que declará-los fortalece o trabalho</h3>
+    <ul class="lst">
+      <li><b>A ocupação é média mensal.</b> Um evento de três dias dilui-se em trinta. Sempre que existir
+        pesquisa do recorte fino (Carnaval, Réveillon, Rock in Rio), use-a junto com a média do mês.</li>
+      <li><b>Projeção não é apuração.</b> Boa parte dos números oficiais de impacto é estimativa divulgada
+        antes do evento. Escreva "deve movimentar" para projeção e "movimentou" para balanço, sempre com a data da fonte.</li>
+      <li><b>A ocupação não mede tudo.</b> Diária média, RevPAR, permanência e gasto por turista contam
+        outra parte da história. O caso do BRICS é exemplar: impacto direto pequeno, valor de exposição do
+        destino alto — e a taxa de ocupação não captura o segundo.</li>
+      <li><b>Lacuna de 2019.</b> Os balanços oficiais da Prefeitura/Riotur de 2019 não foram localizados
+        em consulta aberta. A entrevista com o Presidente do Sindicato resolve esse trecho.</li>
+      <li><b>Dado suspeito.</b> Março de 2019 (90,66%) é incompatível com as regiões no mesmo mês.
+        Confirmar na planilha original antes de citar.</li>
+    </ul>
+  </div>
+</div></section>
+
+<!-- ============ 8. FONTES ============ -->
+<section class="page" id="p8"><div class="wrap">
+  <h2>Fontes oficiais consultadas</h2>
+  <p class="lead">Quinze fichas, cada uma com referência em ABNT pronta, links, resumo do que a fonte diz
+    e citações destacadas. Os arquivos estão na pasta <code>fontes/</code> deste repositório.</p>
+
+  <div class="card">
+    <h3>Índice de fontes</h3>
+    <div class="tabela">
+      <table>
+        <thead><tr><th>Ficha</th><th>Fonte / evento</th><th>Natureza</th><th>Confiança</th></tr></thead>
+        <tbody>
+          <tr><td>F01</td><td>Pesquisa de Ocupação HotéisRIO/ABIH-RJ (2018–2025)</td><td>Primária, dado próprio</td><td>★★★★★</td></tr>
+          <tr><td>F02</td><td>Cúpula do G20 (nov/2024)</td><td>HotéisRIO + Ministério do Turismo</td><td>★★★★☆</td></tr>
+          <tr><td>F03</td><td>Taylor Swift e novembro de 2023</td><td>Prefeitura do Rio (SMDUE)</td><td>★★★★★</td></tr>
+          <tr><td>F04</td><td>Madonna em Copacabana (mai/2024)</td><td>Prefeitura do Rio + Agência Brasil</td><td>★★★★★</td></tr>
+          <tr><td>F05</td><td>Rock in Rio 2024</td><td>Agência Brasil + FGV</td><td>★★★★★</td></tr>
+          <tr><td>F06</td><td>Rock in Rio 2022</td><td>FGV + HotéisRIO via imprensa</td><td>★★★★☆</td></tr>
+          <tr><td>F07</td><td>Rock in Rio 2019 e Copa América 2019</td><td><b style="color:var(--amar)">Pendente de fonte oficial</b></td><td>★★☆☆☆</td></tr>
+          <tr><td>F08</td><td>Pandemia de Covid-19 (2020–2021)</td><td>Balanço HotéisRIO via imprensa</td><td>★★★★☆</td></tr>
+          <tr><td>F09</td><td>Web Summit Rio (2023–2025)</td><td>Prefeitura do Rio + HotéisRIO</td><td>★★★★★</td></tr>
+          <tr><td>F10</td><td>Carnaval 2025</td><td>Governo do Estado + ABIH-RJ + CNC</td><td>★★★★★</td></tr>
+          <tr><td>F11</td><td>Lady Gaga em Copacabana (mai/2025)</td><td>Prefeitura do Rio (SMDE + Riotur)</td><td>★★★★★</td></tr>
+          <tr><td>F12</td><td>Cúpula do BRICS (jul/2025)</td><td>Prefeitura do Rio (Casa Civil)</td><td>★★★★★</td></tr>
+          <tr><td>F13</td><td>Rio Innovation Week 2025</td><td>HotéisRIO + balanço do organizador</td><td>★★★★☆</td></tr>
+          <tr><td>F14</td><td>Réveillon 2024/2025</td><td>HotéisRIO via Agência Brasil</td><td>★★★★★</td></tr>
+          <tr><td>F15</td><td>IBGE, Observatório Econômico do Rio, SETUR-RJ</td><td>Estatística oficial</td><td>★★★★★</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <h3>Portais oficiais de consulta permanente</h3>
+      <ul class="lst">
+        <li><a href="https://sindhoteisrj.com.br/observatorio-da-hotelaria-do-rio-de-janeiro" target="_blank" rel="noopener">Observatório da Hotelaria do Rio de Janeiro — SindHotéisRJ</a></li>
+        <li><a href="https://observatorioeconomico.rio/" target="_blank" rel="noopener">Observatório Econômico do Rio — Prefeitura</a></li>
+        <li><a href="https://www.ibge.gov.br/estatisticas/economicas/servicos.html" target="_blank" rel="noopener">IBGE — Pesquisa Mensal de Serviços</a></li>
+        <li><a href="https://www.turismo.rj.gov.br/" target="_blank" rel="noopener">Secretaria de Estado de Turismo do RJ</a></li>
+        <li><a href="https://riotur.prefeitura.rio/" target="_blank" rel="noopener">Riotur</a></li>
+        <li><a href="https://abihrj.com.br" target="_blank" rel="noopener">ABIH-RJ</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Citações prontas para o texto</h3>
+      <blockquote>"Um balanço dos sete dias do Rock in Rio indica que o festival gerou R$ 2,6 bilhões
+        para a economia do estado do Rio de Janeiro."<cite>Agência Brasil, 23 set. 2024 — ficha F05</cite></blockquote>
+      <blockquote>"A cidade do Rio de Janeiro alcançou os 80,09% de taxa de ocupação média da hotelaria
+        para o período de 15 a 20 de novembro."<cite>PANROTAS com dados HotéisRIO/ABIH-RJ, 14 nov. 2024 — ficha F02</cite></blockquote>
+      <blockquote>"O setor hoteleiro teve 98,62% de taxa de ocupação na capital do Rio."<cite>Agência
+        Brasil com dados da ABIH-RJ, 10 mar. 2025 — ficha F10</cite></blockquote>
+    </div>
+  </div>
+</div></section>
+
+<!-- ============ 10. RASTREIO DE AGENDA ============ -->
+<section class="page" id="p10"><div class="wrap">
+  <h2>Rastreio de agenda — onde os eventos são localizados</h2>
+  <p class="lead">Lista fechada de casas de espetáculo, centros de convenções e plataformas de bilheteria
+    usados para levantar o calendário de eventos da cidade. Serve para duas coisas: localizar os eventos
+    do recorte e manter o rastreio vivo depois da entrega do TCC.</p>
+
+  <div class="card">
+    <h3>Aviso metodológico importante</h3>
+    <p style="color:var(--ink2);margin-top:0">As plataformas de bilheteria <b>não guardam histórico</b>:
+      Sympla, Eventim, Ingresse, Ticketmaster, Bilheteria Digital e Fever retiram do ar o evento depois
+      que ele acontece. A consulta feita em 16/09/2026 nesses sites devolveu quase só agenda futura.
+      Por isso a divisão de trabalho neste trabalho é a seguinte:</p>
+    <ul class="lst">
+      <li><b>Plataformas e casas de espetáculo</b> → servem para localizar e nomear eventos, e para
+        acompanhar a agenda a partir de agora.</li>
+      <li><b>Fontes oficiais</b> (Prefeitura, Riotur, SETUR-RJ, Agência Brasil, IBGE, HotéisRIO/ABIH-RJ,
+        FGV) → servem para os números de público, ocupação e impacto econômico. Só elas entram nas fichas
+        da pasta <code>fontes/</code>.</li>
+    </ul>
+    <p class="nota">Recomendação prática: para eventos anteriores a 2023, use o Internet Archive
+      (<a href="https://web.archive.org" target="_blank" rel="noopener">web.archive.org</a>) sobre as URLs
+      de agenda destas casas. É a única forma de recuperar programação que já saiu do ar.</p>
+  </div>
+
+  <div class="card">
+    <h3>Eventos passados efetivamente localizados nesses sites</h3>
+    <p class="cap">Consulta de 16/09/2026. Cada linha traz o link de onde a informação foi tirada.</p>
+    <div class="tabela">
+      <table>
+        <thead><tr><th>Evento</th><th>Quando</th><th>Local</th><th>Site de onde saiu</th></tr></thead>
+        <tbody>
+          <tr><td>Bienal do Livro Rio 2025</td><td>2025</td><td>Riocentro</td>
+            <td><a href="https://riocentro.com.br/grandes-eventos-movimentam-bilhoes-no-rio-o-papel-do-riocentro-no-crescimento-historico-do-setor/" target="_blank" rel="noopener">riocentro.com.br</a></td></tr>
+          <tr><td>Congresso Mundial de Mieloma</td><td>25 a 28 de setembro de 2024</td><td>Riocentro</td>
+            <td><a href="https://riocentro.com.br/" target="_blank" rel="noopener">riocentro.com.br</a></td></tr>
+          <tr><td>Congresso da SBC (Sociedade Brasileira de Cardiologia)</td><td>2025</td><td>Riocentro</td>
+            <td><a href="https://riocentro.com.br/grandes-eventos-movimentam-bilhoes-no-rio-o-papel-do-riocentro-no-crescimento-historico-do-setor/" target="_blank" rel="noopener">riocentro.com.br</a></td></tr>
+          <tr><td>Web Summit Rio 2025</td><td>abril de 2025</td><td>Riocentro</td>
+            <td><a href="https://riocentro.com.br/grandes-eventos-movimentam-bilhoes-no-rio-o-papel-do-riocentro-no-crescimento-historico-do-setor/" target="_blank" rel="noopener">riocentro.com.br</a></td></tr>
+          <tr><td>ArtRio 2024</td><td>25 a 29 de setembro de 2024</td><td>Marina da Glória</td>
+            <td><a href="https://visitrio.com.br/artrio-2024/" target="_blank" rel="noopener">visitrio.com.br</a></td></tr>
+          <tr><td>Queremos! Festival 2025 (15 anos)</td><td>10 a 13 de abril de 2025</td><td>Circo Voador, Fundição Progresso e outros</td>
+            <td><a href="https://www.circovoador.com.br/" target="_blank" rel="noopener">circovoador.com.br</a> · <a href="https://www.ticketmaster.com.br/event/arnaldo-antunes-no-circo-voador-rj" target="_blank" rel="noopener">ticketmaster.com.br</a></td></tr>
+          <tr><td>Rio Innovation Week 2025 (5ª edição)</td><td>agosto de 2025</td><td>Píer Mauá</td>
+            <td>Ficha F13 — fontes oficiais</td></tr>
+          <tr><td>DroneArt Show</td><td>7 de agosto de 2026 (futuro)</td><td>Riocentro</td>
+            <td><a href="https://riocentro.com.br/agenda-de-eventos/" target="_blank" rel="noopener">riocentro.com.br/agenda-de-eventos</a></td></tr>
+          <tr><td>FEICON</td><td>6 de outubro de 2026 (futuro)</td><td>Riocentro</td>
+            <td><a href="https://riocentro.com.br/agenda-de-eventos/" target="_blank" rel="noopener">riocentro.com.br/agenda-de-eventos</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="nota"><b>Atenção a um dado:</b> a página do Riocentro afirma que a cidade "bateu recorde de
+      eventos em 2025, movimentando mais de US$ 1,6 bilhão na economia local" — mas atribui o número ao
+      Visit Rio. Como há restrição ao uso do Visit Rio como fonte central, esse dado só deve entrar se você
+      localizar o equivalente na Prefeitura ou na Secretaria de Estado de Turismo.</p>
+  </div>
+
+  <div class="card">
+    <h3>Lista de rastreio permanente</h3>
+    <div class="tabela">
+      <table>
+        <thead><tr><th>Local / plataforma</th><th>Tipo</th><th>Bairro</th><th>Site</th></tr></thead>
+        <tbody>
+          <tr><td>Riocentro</td><td>Centro de convenções</td><td>Barra Olímpica</td><td><a href="https://riocentro.com.br/agenda-de-eventos/" target="_blank" rel="noopener">riocentro.com.br</a></td></tr>
+          <tr><td>Vivo Rio</td><td>Casa de espetáculo</td><td>Flamengo</td><td><a href="https://vivorio.com.br/" target="_blank" rel="noopener">vivorio.com.br</a></td></tr>
+          <tr><td>Cidade das Artes</td><td>Complexo cultural</td><td>Barra da Tijuca</td><td><a href="https://cidadedasartes.rio/" target="_blank" rel="noopener">cidadedasartes.rio</a></td></tr>
+          <tr><td>Circo Voador</td><td>Casa de espetáculo</td><td>Lapa</td><td><a href="https://www.circovoador.com.br/" target="_blank" rel="noopener">circovoador.com.br</a></td></tr>
+          <tr><td>Fundição Progresso</td><td>Casa de espetáculo</td><td>Lapa</td><td><a href="https://www.fundicaoprogresso.com.br/programacao" target="_blank" rel="noopener">fundicaoprogresso.com.br</a></td></tr>
+          <tr><td>Teatro Clara Nunes</td><td>Teatro</td><td>Gávea</td><td><a href="https://site.bileto.sympla.com.br/teatroclaranunes/" target="_blank" rel="noopener">bileto.sympla.com.br</a></td></tr>
+          <tr><td>Visit Rio</td><td>Portal de destino</td><td>—</td><td><a href="https://visitrio.com.br/" target="_blank" rel="noopener">visitrio.com.br</a></td></tr>
+          <tr><td>Agenda Cultural RJ</td><td>Agenda da cidade</td><td>—</td><td><a href="https://www.agendaculturalrj.com.br/" target="_blank" rel="noopener">agendaculturalrj.com.br</a></td></tr>
+          <tr><td>Sympla</td><td>Bilheteria</td><td>—</td><td><a href="https://www.sympla.com.br/eventos/rio-de-janeiro-rj" target="_blank" rel="noopener">sympla.com.br</a></td></tr>
+          <tr><td>Eventim</td><td>Bilheteria</td><td>—</td><td><a href="https://www.eventim.com.br/city/rio-de-janeiro-1672/" target="_blank" rel="noopener">eventim.com.br</a></td></tr>
+          <tr><td>Ticketmaster Brasil</td><td>Bilheteria</td><td>—</td><td><a href="https://www.ticketmaster.com.br/" target="_blank" rel="noopener">ticketmaster.com.br</a></td></tr>
+          <tr><td>Bilheteria Digital</td><td>Bilheteria</td><td>—</td><td><a href="https://www.bilheteriadigital.com/" target="_blank" rel="noopener">bilheteriadigital.com</a></td></tr>
+          <tr><td>Ingresse</td><td>Bilheteria</td><td>—</td><td><a href="https://ingresse.com/home/" target="_blank" rel="noopener">ingresse.com</a></td></tr>
+          <tr><td>Fever</td><td>Bilheteria / experiências</td><td>—</td><td><a href="https://feverup.com/pt/rio-de-janeiro" target="_blank" rel="noopener">feverup.com</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div></section>
+
+<!-- ============ 9. ENTREVISTA E REVISTA ============ -->
+<section class="page" id="p9"><div class="wrap">
+  <h2>Entrevista e produto final</h2>
+  <p class="lead">O TCC tem como produto uma revista. Aqui ficam o roteiro das entrevistas com os dois
+    sujeitos da pesquisa e a pauta fechada da publicação.</p>
+
+  <div class="grid2">
+    <div class="card">
+      <h3>Roteiro · Professor de Turismo (UFF)</h3>
+      <p class="cap">Perguntas de interpretação e de teoria — ele dá o enquadramento conceitual.</p>
+      <ul class="lst">
+        <li>A literatura de turismo distingue evento captado de evento de calendário permanente. No caso do
+          Rio, qual dos dois explica melhor o crescimento da ocupação entre 2022 e 2025?</li>
+        <li>Quanto da recuperação pós-pandemia se deve a eventos e quanto se deve a fatores estruturais,
+          como retomada de voos e redução da oferta hoteleira?</li>
+        <li>Megashow gratuito na orla, financiado com dinheiro público, é política de turismo eficiente ou
+          gasto de vitrine? Como a área avalia esse tipo de investimento?</li>
+        <li>A taxa de ocupação é um bom indicador de impacto turístico? O que ela deixa de fora?</li>
+        <li>Qual é o legado de um evento como o G20 ou o BRICS para a imagem do destino, para além do
+          gasto medido nos dias do encontro?</li>
+        <li>O Rio corre risco de dependência do calendário de eventos?</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Roteiro · Presidente do Sindicato de Hotéis do Rio</h3>
+      <p class="cap">Perguntas de dado, de série histórica e de bastidor do setor — ele preenche a lacuna de 2019.</p>
+      <ul class="lst">
+        <li>Como era a ocupação da cidade em 2018 e 2019, no rescaldo dos Jogos Olímpicos, e o que
+          eventos como a Copa América e o Rock in Rio de 2019 representaram naquele momento?</li>
+        <li>Qual foi o pior mês da história recente da hotelaria carioca, e como o setor sobreviveu a ele?</li>
+        <li>Quantos hotéis fecharam na pandemia e quantos reabriram? Qual o tamanho da oferta hoje
+          comparado a 2019?</li>
+        <li>Qual evento do período trouxe o melhor resultado para o hotel — não em público, mas em
+          diária média e permanência?</li>
+        <li>O Carnaval de 2025 chegou a 98,62% de ocupação. Existe espaço para crescer, ou o destino
+          bateu no teto de capacidade?</li>
+        <li>Que evento o Rio ainda não tem e deveria captar?</li>
+        <li>Como a pesquisa de ocupação do Sindicato é feita, e por que ela é mais confiável que dados
+          de plataformas de reserva?</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Pauta da revista — oito páginas</h3>
+    <div class="tabela">
+      <table>
+        <thead><tr><th>Página</th><th>Matéria</th><th>Dado que sustenta</th><th>Ficha</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Capa — "O Rio que lotou"</td><td>77,73% em 2025, recorde da série</td><td>F01</td></tr>
+          <tr><td>2</td><td>Editorial e ficha técnica</td><td>—</td><td>—</td></tr>
+          <tr><td>3</td><td>Infográfico de abertura: oito anos em uma curva</td><td>Série mensal 2018–2025</td><td>F01</td></tr>
+          <tr><td>4</td><td>O ano que não houve — a hotelaria em 2020</td><td>19,78% em julho, R$ 1,6 bi de prejuízo</td><td>F08</td></tr>
+          <tr><td>5</td><td>O festival que venceu o verão — Rock in Rio</td><td>set/2022 acima de jan/2022; R$ 2,6 bi em 2024</td><td>F05, F06</td></tr>
+          <tr><td>6</td><td>Maio deixou de ser mês morto — Madonna e Lady Gaga</td><td>38% em 2018 contra 72,81% em 2025</td><td>F04, F11</td></tr>
+          <tr><td>7</td><td>Terno em vez de camiseta — G20, BRICS, Web Summit, RIW</td><td>Cinco estrelas acima de 95%; Centro a 90%</td><td>F02, F09, F12, F13</td></tr>
+          <tr><td>8</td><td>Entrevista e o Carnaval recorde</td><td>98,62% em 2025</td><td>F10</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="nota">A revista em formato de página pronta para imprimir está em
+      <code>revista/revista.html</code> — abra no navegador e use Ctrl+P para gerar o PDF.</p>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  Dashboard de apoio ao Trabalho de Conclusão de Curso de Cristiana da Silva Souza Teixeira ·
+  Dados de ocupação: Pesquisa de Ocupação Hoteleira HotéisRIO/ABIH-RJ, consolidada no Observatório da
+  Hotelaria do Rio de Janeiro · Fontes dos eventos verificadas em 16 de setembro de 2026 e arquivadas
+  na pasta <code>fontes/</code> · Uso acadêmico.
+</div></footer>
+
+<script src="dados/dados.js"></script>
+<script>
+(function(){
+  var MES=["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
+  var MESL=["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
+  var ANOS=[2018,2019,2020,2021,2022,2023,2024,2025];
+  var CID=window.OCUPACAO["Cidade do Rio"];
+  var EV=window.EVENTOS;
+  var REG=["Leme / Copacabana","Ipanema / Leblon","Flamengo / Botafogo","Barra da Tijuca / São Conrado","Centro"];
+  var COR={"Cultural":"#8b5cf6","Negócios":"#1f9d72","Institucional":"#e3c77b","Festivo":"#d8a017","Esportivo":"#7fb0ff","Ruptura":"#d9534f"};
+  function tipoKey(t){
+    if(/Cultural/.test(t)&&/Esportivo/.test(t))return"Cultural";
+    if(/Cultural/.test(t))return"Cultural";
+    if(/Negócios/.test(t))return"Negócios";
+    if(/Institucional/.test(t))return"Institucional";
+    if(/Festivo/.test(t))return"Festivo";
+    if(/Esportivo/.test(t))return"Esportivo";
+    return"Ruptura";
+  }
+  function media(a){var v=a.filter(function(x){return x!=null});return v.reduce(function(s,x){return s+x},0)/v.length}
+  function fmt(n){return n.toFixed(2).replace(".",",")}
+  var el=function(id){return document.getElementById(id)};
+  var SVGNS="http://www.w3.org/2000/svg";
+  function svg(w,h){var s=document.createElementNS(SVGNS,"svg");
+    s.setAttribute("viewBox","0 0 "+w+" "+h);s.setAttribute("width",w);s.setAttribute("height",h);
+    s.setAttribute("role","img");return s}
+  function mk(t,a,parent){var e=document.createElementNS(SVGNS,t);
+    for(var k in a)e.setAttribute(k,a[k]);if(parent)parent.appendChild(e);return e}
+  function txt(p,x,y,s,o){var t=mk("text",{x:x,y:y},p);t.textContent=s;
+    o=o||{};t.setAttribute("fill",o.fill||"#a9b6c5");t.setAttribute("font-size",o.size||11);
+    if(o.anchor)t.setAttribute("text-anchor",o.anchor);if(o.weight)t.setAttribute("font-weight",o.weight);
+    return t}
+
+  /* ---------- abas ---------- */
+  var btns=document.querySelectorAll("nav.tabs button");
+  Array.prototype.forEach.call(btns,function(b){
+    b.addEventListener("click",function(){
+      Array.prototype.forEach.call(btns,function(x){x.setAttribute("aria-selected","false")});
+      b.setAttribute("aria-selected","true");
+      document.querySelectorAll("section.page").forEach(function(s){s.classList.remove("on")});
+      el(b.dataset.p).classList.add("on");
+      window.scrollTo({top:0,behavior:"instant"});
+    });
+  });
+
+  /* ---------- KPIs ---------- */
+  var m2018=media(CID[2018]),m2020=media(CID[2020]),m2025=media(CID[2025]);
+  var kpis=[
+    {rot:"Média 2018 · ano-base",num:fmt(m2018)+"%",pe:"ponto de partida da série",cls:""},
+    {rot:"Média 2020 · pandemia",num:fmt(m2020)+"%",pe:"julho de 2020: 19,78%, o pior mês",cls:"down"},
+    {rot:"Média 2025 · recorde",num:fmt(m2025)+"%",pe:"melhor ano de toda a série",cls:"up"},
+    {rot:"Crescimento 2020 → 2025",num:"+"+fmt(m2025-m2020)+" p.p.",pe:"recuperação em cinco anos",cls:"up"},
+    {rot:"Carnaval 2025",num:"98,62%",pe:"recorde histórico da capital",cls:"hi"},
+    {rot:"Eventos documentados",num:String(EV.length),pe:"com fonte oficial arquivada",cls:""}
+  ];
+  el("kpis").innerHTML=kpis.map(function(k){
+    return '<div class="kpi '+k.cls+'"><div class="rot">'+k.rot+'</div><div class="num">'+k.num+
+      '</div><div class="pe">'+k.pe+'</div></div>'}).join("");
+
+  /* ---------- gráfico de barras: média anual ---------- */
+  (function(){
+    var W=900,H=300,P={t:24,r:16,b:40,l:44};
+    var s=svg(W,H),vals=ANOS.map(function(y){return media(CID[y])});
+    var max=90,bw=(W-P.l-P.r)/ANOS.length;
+    for(var g=0;g<=90;g+=15){
+      var y=P.t+(H-P.t-P.b)*(1-g/max);
+      mk("line",{x1:P.l,x2:W-P.r,y1:y,y2:y,stroke:"#2a3541","stroke-width":1},s);
+      txt(s,P.l-8,y+4,g+"%",{anchor:"end",fill:"#6e7f91",size:10});
+    }
+    ANOS.forEach(function(yr,i){
+      var v=vals[i],h=(H-P.t-P.b)*(v/max),x=P.l+i*bw+bw*0.18,w=bw*0.64;
+      var c=yr===2020?"#d9534f":(yr===2025?"#1f9d72":"#2e6fd9");
+      mk("rect",{x:x,y:H-P.b-h,width:w,height:h,fill:c,rx:3,opacity:yr===2020||yr===2025?1:.85},s);
+      txt(s,x+w/2,H-P.b-h-7,fmt(v),{anchor:"middle",fill:"#e7edf4",size:11.5,weight:600});
+      txt(s,x+w/2,H-P.b+18,String(yr),{anchor:"middle",fill:"#a9b6c5",size:11.5});
+    });
+    el("c-anual").appendChild(s);
+  })();
+
+  /* ---------- série contínua com marcadores ---------- */
+  (function(){
+    var W=1120,H=380,P={t:28,r:14,b:54,l:44};
+    var s=svg(W,H);
+    var pts=[];
+    ANOS.forEach(function(y,yi){for(var m=0;m<12;m++){pts.push({y:y,m:m,v:(CID[y]||[])[m]})}});
+    var n=pts.length,iw=W-P.l-P.r,ih=H-P.t-P.b,max=100;
+    var X=function(i){return P.l+iw*i/(n-1)},Y=function(v){return P.t+ih*(1-v/max)};
+    for(var g=0;g<=100;g+=20){
+      mk("line",{x1:P.l,x2:W-P.r,y1:Y(g),y2:Y(g),stroke:"#2a3541"},s);
+      txt(s,P.l-8,Y(g)+4,g+"%",{anchor:"end",fill:"#6e7f91",size:10});
+    }
+    /* faixa da pandemia: abr-mai/2020 */
+    var i0=pts.findIndex(function(p){return p.y===2020&&p.m===3}),i1=i0+1;
+    mk("rect",{x:X(i0)-6,y:P.t,width:X(i1)-X(i0)+12,height:ih,fill:"#d9534f",opacity:.14},s);
+    txt(s,X(i0)+2,P.t+14,"pesquisa suspensa",{fill:"#d9534f",size:9.5});
+    /* separadores de ano */
+    ANOS.forEach(function(y,yi){
+      var i=yi*12,x=X(i);
+      if(yi>0)mk("line",{x1:x,x2:x,y1:P.t,y2:H-P.b,stroke:"#2a3541","stroke-dasharray":"2 4"},s);
+      txt(s,x+iw/ANOS.length/2,H-P.b+22,String(y),{anchor:"middle",fill:"#a9b6c5",size:11.5,weight:600});
+    });
+    /* linha */
+    var d="",open=false;
+    pts.forEach(function(p,i){
+      if(p.v==null){open=false;return}
+      d+=(open?"L":"M")+X(i).toFixed(1)+" "+Y(p.v).toFixed(1)+" ";open=true;
+    });
+    mk("path",{d:d,fill:"none",stroke:"#2e6fd9","stroke-width":2.2,"stroke-linejoin":"round"},s);
+    /* pontos */
+    pts.forEach(function(p,i){
+      if(p.v==null)return;
+      var c=mk("circle",{cx:X(i),cy:Y(p.v),r:2.6,fill:"#7fb0ff"},s);
+      var t=mk("title",{},c);t.textContent=MESL[p.m]+" de "+p.y+": "+fmt(p.v)+"%";
+    });
+    /* marcadores de evento */
+    EV.forEach(function(e){
+      var yi=ANOS.indexOf(e.ano);if(yi<0)return;
+      var i=yi*12+(e.mes-1),p=pts[i];if(!p||p.v==null)return;
+      var cor=COR[tipoKey(e.tipo)];
+      var g=mk("g",{},s);
+      mk("line",{x1:X(i),x2:X(i),y1:Y(p.v)-7,y2:Y(p.v)-20,stroke:cor,"stroke-width":1.4},g);
+      mk("circle",{cx:X(i),cy:Y(p.v)-23,r:4,fill:cor,stroke:"#0d1117","stroke-width":1.2},g);
+      var t=mk("title",{},g);t.textContent=e.nome+" — "+MESL[e.mes-1]+"/"+e.ano+" ("+fmt(p.v)+"%)";
+    });
+    el("c-serie").appendChild(s);
+  })();
+
+  /* ---------- tabela da série ---------- */
+  (function(){
+    var h="<table><thead><tr><th>Mês</th>"+ANOS.map(function(y){return "<th class='n'>"+y+"</th>"}).join("")+"</tr></thead><tbody>";
+    var best={};ANOS.forEach(function(y){var v=(CID[y]||[]).map(function(x){return x==null?-1:x});best[y]=v.indexOf(Math.max.apply(null,v))});
+    for(var m=0;m<12;m++){
+      h+="<tr><td>"+MESL[m]+"</td>";
+      ANOS.forEach(function(y){
+        var v=(CID[y]||[])[m];
+        var d=best[y]===m?" style='background:#16251f;color:#7ee2b8;font-weight:600'":"";
+        h+="<td class='n'"+d+">"+(v==null?"—":fmt(v))+"</td>";
+      });
+      h+="</tr>";
+    }
+    h+="<tr><td><b>média</b></td>"+ANOS.map(function(y){
+      return "<td class='n'><b>"+fmt(media(CID[y]))+"</b></td>"}).join("")+"</tr></tbody></table>";
+    el("t-serie").innerHTML=h;
+  })();
+
+  /* ---------- três anos sobrepostos ---------- */
+  (function(){
+    var W=980,H=330,P={t:24,r:16,b:40,l:44},s=svg(W,H);
+    var sets=[{y:2023,c:"#6e7f91"},{y:2024,c:"#7fb0ff"},{y:2025,c:"#1f9d72"}];
+    var iw=W-P.l-P.r,ih=H-P.t-P.b,min=50,max=90;
+    var X=function(m){return P.l+iw*m/11},Y=function(v){return P.t+ih*(1-(v-min)/(max-min))};
+    for(var g=min;g<=max;g+=10){
+      mk("line",{x1:P.l,x2:W-P.r,y1:Y(g),y2:Y(g),stroke:"#2a3541"},s);
+      txt(s,P.l-8,Y(g)+4,g+"%",{anchor:"end",fill:"#6e7f91",size:10});
+    }
+    for(var m=0;m<12;m++)txt(s,X(m),H-P.b+20,MES[m],{anchor:"middle",fill:"#a9b6c5",size:11});
+    sets.forEach(function(st){
+      var d="",open=false;
+      for(var m=0;m<12;m++){var v=(CID[st.y]||[])[m];if(v==null){open=false;continue}
+        d+=(open?"L":"M")+X(m)+" "+Y(v).toFixed(1)+" ";open=true}
+      mk("path",{d:d,fill:"none",stroke:st.c,"stroke-width":st.y===2025?2.6:2,"stroke-linejoin":"round"},s);
+      for(var m2=0;m2<12;m2++){var v2=(CID[st.y]||[])[m2];if(v2==null)continue;
+        var c=mk("circle",{cx:X(m2),cy:Y(v2),r:3.2,fill:st.c},s);
+        var t=mk("title",{},c);t.textContent=MESL[m2]+" de "+st.y+": "+fmt(v2)+"%"}
+    });
+    el("c-tres").appendChild(s);
+  })();
+
+  /* ---------- eventos: filtros e cards ---------- */
+  (function(){
+    var tipos=["Todos","Cultural","Negócios","Institucional","Festivo","Esportivo","Ruptura"];
+    var atual="Todos";
+    el("filtros").innerHTML=tipos.map(function(t){
+      return '<button aria-pressed="'+(t==="Todos")+'" data-t="'+t+'">'+t+'</button>'}).join("");
+    function render(){
+      var lista=EV.filter(function(e){return atual==="Todos"||tipoKey(e.tipo)===atual})
+        .sort(function(a,b){return a.ano-b.ano||a.mes-b.mes});
+      el("evgrid").innerHTML=lista.map(function(e){
+        var k=tipoKey(e.tipo);
+        return '<article class="ev t-'+k.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")+'">'+
+          '<div class="top"><span class="data">'+MESL[e.mes-1]+' · '+e.ano+'</span>'+
+          '<span class="tag">'+e.tipo+'</span><span class="tag">'+e.porte+'</span>'+
+          '<h4>'+e.nome+'</h4></div>'+
+          '<dl><dt>Público</dt><dd>'+e.publico+'</dd>'+
+          '<dt>Ocupação</dt><dd>'+e.ocupacao+'</dd>'+
+          '<dt>Impacto</dt><dd>'+e.impacto+'</dd></dl>'+
+          '<p class="obs">'+e.obs+'</p>'+
+          '<p class="fonte">Ficha de fonte: <b>'+e.fonte+'</b> — ver pasta <code>fontes/</code></p>'+
+          '</article>'}).join("");
+    }
+    el("filtros").addEventListener("click",function(ev){
+      var b=ev.target.closest("button");if(!b)return;
+      atual=b.dataset.t;
+      el("filtros").querySelectorAll("button").forEach(function(x){
+        x.setAttribute("aria-pressed",String(x===b))});
+      render();
+    });
+    render();
+  })();
+
+  /* ---------- ranking de picos ---------- */
+  (function(){
+    var flat=[];
+    ANOS.forEach(function(y){for(var m=0;m<12;m++){var v=(CID[y]||[])[m];
+      if(v!=null)flat.push({y:y,m:m,v:v})}});
+    flat.sort(function(a,b){return b.v-a.v});
+    var top=flat.slice(0,20);
+    var h="<table><thead><tr><th>#</th><th>Mês</th><th class='n'>Ocupação</th><th>Evento no mês</th><th>Tipo</th></tr></thead><tbody>";
+    top.forEach(function(p,i){
+      var evs=EV.filter(function(e){return e.ano===p.y&&e.mes===p.m+1});
+      var nome=evs.length?evs.map(function(e){return e.nome}).join(" · ")
+        :(p.m===0||p.m===1?"Sazonalidade de verão (Réveillon/Carnaval)":"Sem evento captado documentado");
+      var tipo=evs.length?evs.map(function(e){return e.tipo}).join(", "):"—";
+      h+="<tr"+(evs.length?" class='destaque'":"")+"><td class='n'>"+(i+1)+"</td><td>"+
+        MESL[p.m]+"/"+p.y+"</td><td class='n'><b>"+fmt(p.v)+"</b></td><td>"+nome+"</td><td>"+tipo+"</td></tr>";
+    });
+    h+="</tbody></table>";
+    el("t-ranking").innerHTML=h;
+  })();
+
+  /* ---------- heatmap regiões ---------- */
+  (function(){
+    var W=980,cellH=44,P={t:36,l:210,r:18,b:14};
+    var H=P.t+REG.length*cellH+P.b,s=svg(W,H);
+    var cw=(W-P.l-P.r)/ANOS.length;
+    ANOS.forEach(function(y,i){txt(s,P.l+cw*i+cw/2,P.t-12,String(y),{anchor:"middle",fill:"#a9b6c5",size:11.5,weight:600})});
+    REG.forEach(function(r,ri){
+      txt(s,P.l-12,P.t+cellH*ri+cellH/2+4,r,{anchor:"end",fill:"#e7edf4",size:12});
+      ANOS.forEach(function(y,i){
+        var arr=(window.OCUPACAO[r]||{})[y];
+        var x=P.l+cw*i,yy=P.t+cellH*ri;
+        if(!arr||!arr.filter(function(v){return v!=null}).length){
+          mk("rect",{x:x+1,y:yy+1,width:cw-2,height:cellH-2,fill:"#1b232d",rx:3},s);
+          txt(s,x+cw/2,yy+cellH/2+4,"—",{anchor:"middle",fill:"#6e7f91",size:11});return}
+        var v=media(arr);
+        var t=Math.max(0,Math.min(1,(v-20)/70));
+        var col="rgb("+Math.round(18+t*26)+","+Math.round(38+t*120)+","+Math.round(64+t*70)+")";
+        mk("rect",{x:x+1,y:yy+1,width:cw-2,height:cellH-2,fill:col,rx:3},s);
+        txt(s,x+cw/2,yy+cellH/2+4,fmt(v),{anchor:"middle",fill:t>.55?"#eafff6":"#cfe0ff",size:11.5,weight:600});
+      });
+    });
+    el("c-heat").appendChild(s);
+  })();
+
+  /* ---------- centro ---------- */
+  (function(){
+    var W=900,H=250,P={t:22,r:16,b:38,l:44},s=svg(W,H);
+    var C=window.OCUPACAO["Centro"];
+    var vals=ANOS.map(function(y){return media(C[y])});
+    var max=80,bw=(W-P.l-P.r)/ANOS.length;
+    for(var g=0;g<=80;g+=20){var y=P.t+(H-P.t-P.b)*(1-g/max);
+      mk("line",{x1:P.l,x2:W-P.r,y1:y,y2:y,stroke:"#2a3541"},s);
+      txt(s,P.l-8,y+4,g+"%",{anchor:"end",fill:"#6e7f91",size:10})}
+    ANOS.forEach(function(yr,i){
+      var v=vals[i],h=(H-P.t-P.b)*(v/max),x=P.l+i*bw+bw*.2,w=bw*.6;
+      mk("rect",{x:x,y:H-P.b-h,width:w,height:h,fill:yr>=2024?"#e3c77b":"#2e6fd9",rx:3,opacity:.9},s);
+      txt(s,x+w/2,H-P.b-h-6,fmt(v),{anchor:"middle",fill:"#e7edf4",size:11,weight:600});
+      txt(s,x+w/2,H-P.b+17,String(yr),{anchor:"middle",fill:"#a9b6c5",size:11});
+    });
+    el("c-centro").appendChild(s);
+  })();
+})();
+</script>
+</body>
+</html>
