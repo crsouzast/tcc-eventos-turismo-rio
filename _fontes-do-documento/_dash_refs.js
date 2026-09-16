@@ -4,6 +4,13 @@ const C = require('./_ficha_conteudo.js');
 const P = "./tcc-eventos-turismo-rio/index.html";
 let h = fs.readFileSync(P, "utf8");
 
+/* IDEMPOTENTE: remove abas e seções já injetadas antes de reinjetar */
+h = h.replace(/\n    <button role="tab" aria-selected="false" data-p="p1[12]">[^<]*<\/button>/g, "");
+const RE_SEC = /<!-- ============ 1[12]\. [^=]*============ -->[\s\S]*?<\/section>\n/;
+while (RE_SEC.test(h)) h = h.replace(RE_SEC, "");
+h = h.replace('    <button role="tab" aria-selected="false" data-p="p9">Entrevistas</button>',
+              '    <button role="tab" aria-selected="false" data-p="p9">Entrevista e revista</button>');
+
 const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 const linkify = s => esc(s).replace(/(https?:\/\/[^\s)]+?)(?=[.,;]?(\s|$))/g,
   '<a href="$1" target="_blank" rel="noopener">$1</a>');
