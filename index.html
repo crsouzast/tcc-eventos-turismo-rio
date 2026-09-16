@@ -286,6 +286,45 @@
   </div>
 
   <div class="card">
+    <h3>O efeito medido: o mesmo mês, com e sem evento</h3>
+    <p class="cap">Este é o cálculo que responde à pergunta da pesquisa. Para cada mês em que houve
+      evento de grande porte, comparamos a ocupação daquele mês com a média do <b>mesmo mês do calendário
+      em 2018 e 2019</b> — antes da pandemia e antes do ciclo atual de eventos. A diferença, em pontos
+      percentuais, é o tamanho do descolamento.</p>
+    <div class="tabela" id="t-efeito"></div>
+    <p class="nota">Leitura: a coluna "diferença" não é atribuível apenas ao evento — há tendência de
+      crescimento no período. Mas quando um mês de baixa estação (maio, setembro) sobe 30 pontos
+      percentuais e o evento é a única mudança visível no calendário daquele mês, o indício é forte.</p>
+  </div>
+
+  <div class="card">
+    <h3>O que cada evento deixou em dinheiro, empregos e movimento</h3>
+    <p class="cap">Dados oficiais de impacto. É esta tabela que sustenta a contribuição social declarada
+      no projeto: emprego, comércio e orientação de política pública.</p>
+    <div class="tabela">
+      <table>
+        <thead><tr><th>Evento</th><th>Impacto econômico</th><th>Emprego / comércio</th><th>Fluxo</th></tr></thead>
+        <tbody>
+          <tr><td>Carnaval 2025</td><td>~R$ 6,5 bi no estado (R$ 5,5 bi na capital)</td><td>Bares e restaurantes +20% sobre 2024</td><td>Mais de 8 milhões de visitantes</td></tr>
+          <tr><td>Rio Innovation Week 2025</td><td>R$ 4 bi em negócios gerados · R$ 149,7 mi injetados na cidade</td><td>—</td><td>205 mil pessoas em 4 dias</td></tr>
+          <tr><td>Rock in Rio 2024</td><td>R$ 2,6 bi no estado</td><td>32,6 mil postos de trabalho (FGV) · comércio +24%</td><td>380 voos extras · 47 mil passageiros</td></tr>
+          <tr><td>Rock in Rio 2022</td><td>R$ 1,7 bi (FGV)</td><td>28 mil empregos diretos</td><td>700 mil pessoas</td></tr>
+          <tr><td>Cúpula do G20 2024</td><td>R$ 600 mi projetados no turismo de eventos · R$ 1,6 mi de ISS</td><td>41 eventos no mês, 13 da Cúpula</td><td>326 mil passageiros no Galeão (+68%)</td></tr>
+          <tr><td>Lady Gaga 2025</td><td>Mais de R$ 600 mi (custo: R$ 92 mi)</td><td>—</td><td>2,1 milhões de pessoas</td></tr>
+          <tr><td>Novembro de 2023 (Taylor Swift e outros)</td><td>R$ 669,2 mi no mês · R$ 158 mi só Taylor Swift</td><td>IBGE: serviços +2,2% no mês</td><td>Três noites no Engenhão</td></tr>
+          <tr><td>Web Summit Rio (2023–2025)</td><td>R$ 476,6 mi nas três edições · projeção de R$ 1,8 bi até 2030</td><td>Hotelaria = 51,6% dos gastos</td><td>280,6 mil participantes</td></tr>
+          <tr><td>Madonna 2024</td><td>R$ 293,4 mi projetados · ~R$ 300 mi apurados</td><td>Retorno 30× o patrocínio público</td><td>1,6 milhão de pessoas · 150 mil turistas</td></tr>
+          <tr><td>Cúpula do BRICS 2025</td><td>R$ 23 mi nos dois dias · R$ 70 mi no ciclo</td><td>—</td><td>4 mil participantes de 37 países</td></tr>
+          <tr style="background:#1f1a12"><td colspan="4" style="color:var(--areia);font-size:12.5px">
+            <b>Atenção ao somar:</b> "impacto econômico", "negócios gerados" e "movimentação" são
+            metodologias diferentes e não devem ser somados em um número único. Some apenas o que tem a
+            mesma natureza e diga qual é.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
     <h3>Como ler esse resultado sem exagerar na conclusão</h3>
     <p style="color:var(--ink2);margin-top:0">O ranking mostra que os meses de topo se concentram em
       2025 e em novembro — e novembro não é mês de verão nem de Carnaval. Isso é um indício forte a favor
@@ -842,6 +881,28 @@
       txt(s,x+w/2,H-P.b+17,String(yr),{anchor:"middle",fill:"#a9b6c5",size:11});
     });
     el("c-centro").appendChild(s);
+  })();
+
+  /* ---------- efeito medido: mesmo mês, com e sem evento ---------- */
+  (function(){
+    var base=function(m){ /* média do mesmo mês em 2018 e 2019 */
+      var a=[(CID[2018]||[])[m],(CID[2019]||[])[m]].filter(function(v){return v!=null});
+      return a.length?a.reduce(function(s,v){return s+v},0)/a.length:null};
+    var lista=EV.filter(function(e){return e.ano>=2022&&tipoKey(e.tipo)!=="Ruptura"})
+      .sort(function(a,b){return a.ano-b.ano||a.mes-b.mes});
+    var h="<table><thead><tr><th>Mês do evento</th><th>Evento</th><th class='n'>Ocupação no mês</th>"+
+      "<th class='n'>Média do mesmo mês em 2018–2019</th><th class='n'>Diferença</th></tr></thead><tbody>";
+    lista.forEach(function(e){
+      var v=(CID[e.ano]||[])[e.mes-1],b=base(e.mes-1);
+      if(v==null||b==null)return;
+      var d=v-b;
+      h+="<tr><td>"+MESL[e.mes-1]+"/"+e.ano+"</td><td>"+e.nome+"</td><td class='n'>"+fmt(v)+"</td>"+
+        "<td class='n' style='color:#8a9098'>"+fmt(b)+"</td>"+
+        "<td class='n' style='color:"+(d>0?"#7ee2b8":"#d9534f")+";font-weight:600'>"+
+        (d>0?"+":"")+fmt(d)+" p.p.</td></tr>";
+    });
+    h+="</tbody></table>";
+    el("t-efeito").innerHTML=h;
   })();
 })();
 </script>

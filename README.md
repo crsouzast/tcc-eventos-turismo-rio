@@ -106,3 +106,14 @@ Secretaria de Estado de Turismo do RJ, Agência Brasil (EBC), IBGE (Pesquisa Men
 Fundação Getulio Vargas. Consulta e verificação: **16 de setembro de 2026**.
 
 Uso acadêmico.
+
+---
+
+## Novos arquivos desta versão
+
+- [`FUNDAMENTACAO-TEORICA.md`](FUNDAMENTACAO-TEORICA.md) — 9 referências acadêmicas (SciELO, Redalyc),
+  cada uma com link direto, citação e explicação de como usar, mais um resumo em linguagem simples.
+- [`RESUMO-SIMPLES.md`](RESUMO-SIMPLES.md) — o TCC contado sem jargão, com o link da fonte em cada
+  afirmação, para você reescrever com as suas palavras.
+- [`FICHA-DO-PROJETO.docx`](FICHA-DO-PROJETO.docx) — **ficha para download em Word**: Diretrizes da
+  Pesquisa, tabelas de ocupação e de impacto, fundamentação teórica e ressalvas metodológicas.
