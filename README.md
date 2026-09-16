@@ -115,5 +115,8 @@ Uso acadêmico.
   cada uma com link direto, citação e explicação de como usar, mais um resumo em linguagem simples.
 - [`RESUMO-SIMPLES.md`](RESUMO-SIMPLES.md) — o TCC contado sem jargão, com o link da fonte em cada
   afirmação, para você reescrever com as suas palavras.
-- [`FICHA-DO-PROJETO.docx`](FICHA-DO-PROJETO.docx) — **ficha para download em Word**: Diretrizes da
-  Pesquisa, tabelas de ocupação e de impacto, fundamentação teórica e ressalvas metodológicas.
+- [`FICHA-DO-PROJETO.docx`](FICHA-DO-PROJETO.docx) — **a ficha completa do projeto, em Word, para
+  download e edição**: ficha de identificação, Introdução (Contextualização e Justificativa), Objetivo,
+  Metodologia, Fundamentação Teórica, Projeto Gráfico Editorial, Conclusão, Referências e o **Quadro de
+  conferência** com 31 linhas (afirmação · link da fonte · citação pronta para o TCC).
+- [`FICHA-DO-PROJETO.md`](FICHA-DO-PROJETO.md) — a mesma ficha em Markdown, com todos os links clicáveis.
