@@ -27,7 +27,7 @@ repositório executa exatamente isso e deixa o material pronto para ser escrito:
 1. **A série completa** de ocupação hoteleira da cidade do Rio, mensal, por região, de janeiro de 2018
    a dezembro de 2025 — extraída da Pesquisa de Ocupação Hoteleira HotéisRIO/ABIH-RJ consolidada no
    [Observatório da Hotelaria do Rio de Janeiro](https://sindhoteisrj.com.br/observatorio-da-hotelaria-do-rio-de-janeiro).
-2. **Dezenove eventos documentados** no período, cada um com público, ocupação, impacto econômico e
+2. **Dezoito eventos documentados** no período, cada um com público, ocupação, impacto econômico e
    fonte oficial arquivada.
 3. **O cruzamento** entre picos de ocupação e calendário de eventos, com os limites do método declarados.
 4. **A revista**, produto final do TCC, já redigida e diagramada em 6 páginas.
@@ -75,7 +75,7 @@ tcc-eventos-turismo-rio/
 ├── dados/
 │   ├── ocupacao_cidade_do_rio_2018_2025.csv        série mensal da cidade
 │   ├── ocupacao_hoteleira_rio_2018_2025_por_regiao.csv   série por região
-│   ├── eventos.json            19 eventos com dados e ficha de fonte
+│   ├── eventos.json            18 eventos com dados e ficha de fonte
 │   ├── ocupacao.json           base usada pelos gráficos
 │   └── dados.js                mesma base, embutida para funcionar offline
 └── fontes/

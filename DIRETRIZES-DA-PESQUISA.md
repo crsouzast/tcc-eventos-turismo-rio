@@ -58,7 +58,7 @@ compreensão dos efeitos desses eventos na retomada e desenvolvimento do turismo
 
 | Item das Diretrizes | Onde está | Situação |
 |---|---|---|
-| Objeto — eventos de grande porte 2018–2025 | `dados/eventos.json` e aba **Eventos** do dashboard | 19 eventos documentados |
+| Objeto — eventos de grande porte 2018–2025 | `dados/eventos.json` e aba **Eventos** do dashboard | 18 eventos documentados |
 | Metodologia, passo 1 — períodos de maior ocupação | aba **Série histórica** e **Cruzamento pico × evento** | feito |
 | Metodologia, passo 2 — verificar eventos nesses períodos | aba **Cruzamento pico × evento** | feito |
 | Metodologia, passo 3 — relacionar e identificar os que mais impulsionaram | aba **Recorte 2023–2025** e revista | feito |
